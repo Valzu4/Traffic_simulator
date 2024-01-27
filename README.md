@@ -1,4 +1,4 @@
- Traffic simulator
+# Traffic simulator
 
 ## Disclamer: This project was a group project
 The project was a part of Aalto University course ELEC-A7151, Object oriented programming with C++, organized by Yusein Ali, and the project advisor was Niilo Heinonen.
