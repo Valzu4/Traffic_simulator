@@ -1,0 +1,287 @@
+\hypertarget{classSquare}{}\doxysection{Square Class Reference}
+\label{classSquare}\index{Square@{Square}}
+
+
+\mbox{\hyperlink{classSquare}{Square}} class is a building block of city, and might contain buildings or roads.  
+
+
+
+
+{\ttfamily \#include $<$Square.\+hpp$>$}
+
+
+
+Inheritance diagram for Square\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSquare__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Square\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classSquare__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSquare_aac7e0c0d68e366187f5c7dd2e28c85e4}{Square}} (\mbox{\hyperlink{structPosition}{Position}} pos, \mbox{\hyperlink{classCity}{City}} \&city)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classSquare}{Square}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_ab6c220a623d0d0f4793828063728dc10}\label{classSquare_ab6c220a623d0d0f4793828063728dc10}} 
+\mbox{\hyperlink{classSquare_ab6c220a623d0d0f4793828063728dc10}{$\sim$\+Square}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classSquare}{Square}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPosition}{Position}} \mbox{\hyperlink{classSquare_aebdce56457f56426ba9a996271b08fc1}{get\+Coordinates}} () const
+\begin{DoxyCompactList}\small\item\em get\+Coordinates returns the coordinates of the square \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSquare}{Square}} $\ast$ \mbox{\hyperlink{classSquare_ac2a996102a64dc44ad194cdf403f3773}{get\+Neighbour}} (Direction dir)
+\begin{DoxyCompactList}\small\item\em get\+Neighbour returns the neighbour of the square in the given direction \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSquare_abce117b86967ef5a0510d664f9125dd0}{simulate}} ()
+\begin{DoxyCompactList}\small\item\em simulate simulates the functionalities of the square \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classSquare_a4f159a7281a619381e4fc7514aaefdb3}{get\+Car\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+Car\+Count returns the ammount of cars in the square \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classSquare_a8d6f5f450ea0ad9389497ff734d96691}{get\+Ped\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+Ped\+Count returns the ammount of pedestrians in the square \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classSquare_a8905eb234a3e05af6d8cab80f4549dcd}{add\+Ped}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&\&ped)
+\begin{DoxyCompactList}\small\item\em add\+Ped adds a pedestrian to the square \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classSquare_ab6d17d8370337914cc62a7a0323d1a56}{add\+Car}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&car)
+\begin{DoxyCompactList}\small\item\em add\+Car adds a car to the square. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classSquare_a1f3862dccc3dfc17881fa806bbff3308}{join\+Car}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&car)
+\begin{DoxyCompactList}\small\item\em join\+Car adds a car from a building to the road or intersection \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSquare}{Square}} \& \mbox{\hyperlink{classSquare_aefd7f1993a8a7dc2da19773aa615d4e5}{operator=}} (const \mbox{\hyperlink{classSquare}{Square}} \&other)
+\begin{DoxyCompactList}\small\item\em operator= copy assignment operator for square \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_a43d0285d94048e6ad2ba4c65d25c8239}\label{classSquare_a43d0285d94048e6ad2ba4c65d25c8239}} 
+virtual bool \mbox{\hyperlink{classSquare_a43d0285d94048e6ad2ba4c65d25c8239}{is\+Road}} () const
+\begin{DoxyCompactList}\small\item\em is\+Road returns is the square type road \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_a004f372222ffb6d0fc23ff100a9d8961}\label{classSquare_a004f372222ffb6d0fc23ff100a9d8961}} 
+virtual bool \mbox{\hyperlink{classSquare_a004f372222ffb6d0fc23ff100a9d8961}{is\+Building}} () const
+\begin{DoxyCompactList}\small\item\em is\+Building returns is the square type building \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_aa07ac472d290d29ac7e4832872a090f2}\label{classSquare_aa07ac472d290d29ac7e4832872a090f2}} 
+virtual Building\+Type \mbox{\hyperlink{classSquare_aa07ac472d290d29ac7e4832872a090f2}{building\+Type}} () const
+\begin{DoxyCompactList}\small\item\em building\+Type returns the building type in the square, Returns None if it is not building \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_acf025d6a076282d6a3005cfd0912c7e5}\label{classSquare_acf025d6a076282d6a3005cfd0912c7e5}} 
+virtual bool \mbox{\hyperlink{classSquare_acf025d6a076282d6a3005cfd0912c7e5}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em is\+Empty returns is the square type empty \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_a237f31dbf8086344467fea6c263382d5}\label{classSquare_a237f31dbf8086344467fea6c263382d5}} 
+virtual bool \mbox{\hyperlink{classSquare_a237f31dbf8086344467fea6c263382d5}{is\+Intersection}} () const
+\begin{DoxyCompactList}\small\item\em is\+Intersection returns is the square type intersection \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_a77290cc8478bc0207378b16df2aa4956}\label{classSquare_a77290cc8478bc0207378b16df2aa4956}} 
+virtual void \mbox{\hyperlink{classSquare_a77290cc8478bc0207378b16df2aa4956}{init\+Square}} ()
+\begin{DoxyCompactList}\small\item\em init\+Square initializes the square for simulation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSquare_a41c6643eb69a23fecccb6b95a522b1e4}\label{classSquare_a41c6643eb69a23fecccb6b95a522b1e4}} 
+\mbox{\hyperlink{structPosition}{Position}} \mbox{\hyperlink{classSquare_a41c6643eb69a23fecccb6b95a522b1e4}{coordinates\+\_\+}}
+\begin{DoxyCompactList}\small\item\em coordinates\+\_\+ The coordinates of the square \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSquare_a2bd43723da09343be0b7ffe9c646a995}\label{classSquare_a2bd43723da09343be0b7ffe9c646a995}} 
+\mbox{\hyperlink{classCity}{City}} \& \mbox{\hyperlink{classSquare_a2bd43723da09343be0b7ffe9c646a995}{city\+\_\+}}
+\begin{DoxyCompactList}\small\item\em city\+\_\+ Reference to the city where the square resides \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classSquare}{Square}} class is a building block of city, and might contain buildings or roads. 
+
+\mbox{\hyperlink{classSquare}{Square}} is a building block of the city. It can contain buildings, roads or be empty. Empty squares simulate empty spaces in the city, and don\textquotesingle{}t interract with other squares. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSquare_aac7e0c0d68e366187f5c7dd2e28c85e4}\label{classSquare_aac7e0c0d68e366187f5c7dd2e28c85e4}} 
+\index{Square@{Square}!Square@{Square}}
+\index{Square@{Square}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{Square()}{Square()}}
+{\footnotesize\ttfamily Square\+::\+Square (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{pos,  }\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classSquare}{Square}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \mbox{\hyperlink{structPosition}{Position}} of the square \\
+\hline
+{\em city} & Reference to the city \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSquare_ab6d17d8370337914cc62a7a0323d1a56}\label{classSquare_ab6d17d8370337914cc62a7a0323d1a56}} 
+\index{Square@{Square}!addCar@{addCar}}
+\index{addCar@{addCar}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{addCar()}{addCar()}}
+{\footnotesize\ttfamily virtual int Square\+::add\+Car (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+add\+Car adds a car to the square. 
+
+Every subclass has its own implementation of the function. Default implementation does nothing and returns 0 for failure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & the car to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if succesfull, 0 if not. (Default 0) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classRoad_ab1d6ebe129c2eb8785ea1683947efa23}{Road}}, \mbox{\hyperlink{classIntersection_aed8656139357616272cc71dcf1737966}{Intersection}}, and \mbox{\hyperlink{classBuilding_a1220f7832c36167eface93516c1c329e}{Building}}.
+
+\mbox{\Hypertarget{classSquare_a8905eb234a3e05af6d8cab80f4549dcd}\label{classSquare_a8905eb234a3e05af6d8cab80f4549dcd}} 
+\index{Square@{Square}!addPed@{addPed}}
+\index{addPed@{addPed}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{addPed()}{addPed()}}
+{\footnotesize\ttfamily virtual int Square\+::add\+Ped (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&\&}]{ped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+add\+Ped adds a pedestrian to the square 
+
+The function adds a pedestrian to the road. The pedestrian is added to the beginning of the road vector, which is defined by the direction of the pedestrian.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ped} & the pedestrian to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if succesfull, 0 if not 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classRoad_a76b9e79d3f9b971f90967c385e390cb6}{Road}}, \mbox{\hyperlink{classIntersection_ad292123243d9afc2a76ecffc69cb42a6}{Intersection}}, and \mbox{\hyperlink{classBuilding_abe1fc1e7e410ce26d9ba0eb9fa92d7f9}{Building}}.
+
+\mbox{\Hypertarget{classSquare_a4f159a7281a619381e4fc7514aaefdb3}\label{classSquare_a4f159a7281a619381e4fc7514aaefdb3}} 
+\index{Square@{Square}!getCarCount@{getCarCount}}
+\index{getCarCount@{getCarCount}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{getCarCount()}{getCarCount()}}
+{\footnotesize\ttfamily virtual int Square\+::get\+Car\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get\+Car\+Count returns the ammount of cars in the square 
+
+\begin{DoxyReturn}{Returns}
+the ammount of cars in the square. Default implementation returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classRoad_a958ac91554f6c6f34ae56ab9b92b651c}{Road}}, \mbox{\hyperlink{classIntersection_a3984e42abbb4464ab9a5268b310694b9}{Intersection}}, and \mbox{\hyperlink{classBuilding_a485dd9f5851401b80f0b9b7f9acc15e5}{Building}}.
+
+\mbox{\Hypertarget{classSquare_aebdce56457f56426ba9a996271b08fc1}\label{classSquare_aebdce56457f56426ba9a996271b08fc1}} 
+\index{Square@{Square}!getCoordinates@{getCoordinates}}
+\index{getCoordinates@{getCoordinates}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{getCoordinates()}{getCoordinates()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPosition}{Position}} Square\+::get\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Coordinates returns the coordinates of the square 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structPosition}{Position}} coordinates of the square 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSquare_ac2a996102a64dc44ad194cdf403f3773}\label{classSquare_ac2a996102a64dc44ad194cdf403f3773}} 
+\index{Square@{Square}!getNeighbour@{getNeighbour}}
+\index{getNeighbour@{getNeighbour}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{getNeighbour()}{getNeighbour()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSquare}{Square}} $\ast$ Square\+::get\+Neighbour (\begin{DoxyParamCaption}\item[{Direction}]{dir }\end{DoxyParamCaption})}
+
+
+
+get\+Neighbour returns the neighbour of the square in the given direction 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & Direction of the neighbour to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Square$\ast$ Pointer to the neighbour 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSquare_a8d6f5f450ea0ad9389497ff734d96691}\label{classSquare_a8d6f5f450ea0ad9389497ff734d96691}} 
+\index{Square@{Square}!getPedCount@{getPedCount}}
+\index{getPedCount@{getPedCount}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{getPedCount()}{getPedCount()}}
+{\footnotesize\ttfamily virtual int Square\+::get\+Ped\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get\+Ped\+Count returns the ammount of pedestrians in the square 
+
+\begin{DoxyReturn}{Returns}
+the ammount of pedestrians in the square. Default implementation returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classRoad_a03f23feae4df501c440c009e0d300c94}{Road}}, and \mbox{\hyperlink{classIntersection_a2499892ca2b570f7ac848b171f6f603e}{Intersection}}.
+
+\mbox{\Hypertarget{classSquare_a1f3862dccc3dfc17881fa806bbff3308}\label{classSquare_a1f3862dccc3dfc17881fa806bbff3308}} 
+\index{Square@{Square}!joinCar@{joinCar}}
+\index{joinCar@{joinCar}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{joinCar()}{joinCar()}}
+{\footnotesize\ttfamily virtual int Square\+::join\+Car (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+join\+Car adds a car from a building to the road or intersection 
+
+The function adds a car to the road. The car is added to the middle of the road, to simulate the car driving out of a building to the middle of the road.
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & the car to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if successfull, 0 if not (default is 0) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classRoad_a8f27eacb05dcf57e26495892976637a3}{Road}}, and \mbox{\hyperlink{classIntersection_a97d02e51401e4257a8128f303b60960c}{Intersection}}.
+
+\mbox{\Hypertarget{classSquare_aefd7f1993a8a7dc2da19773aa615d4e5}\label{classSquare_aefd7f1993a8a7dc2da19773aa615d4e5}} 
+\index{Square@{Square}!operator=@{operator=}}
+\index{operator=@{operator=}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSquare}{Square}} \& Square\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSquare}{Square}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+operator= copy assignment operator for square 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the square to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classSquare}{Square}}\& reference to the square 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSquare_abce117b86967ef5a0510d664f9125dd0}\label{classSquare_abce117b86967ef5a0510d664f9125dd0}} 
+\index{Square@{Square}!simulate@{simulate}}
+\index{simulate@{simulate}!Square@{Square}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily virtual void Square\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+simulate simulates the functionalities of the square 
+
+Each different square type has its own implementation of the function. Empty square does nothing. 
+
+Reimplemented in \mbox{\hyperlink{classRoad_a66b4c341290bf28a16a5707ff4afa26b}{Road}}, \mbox{\hyperlink{classIntersection_a25cecdf71616ec953a8b2107121097ba}{Intersection}}, and \mbox{\hyperlink{classBuilding_aa3926ea68b133d326423919d082d183b}{Building}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Square.\+hpp\item 
+src/Square.\+cpp\end{DoxyCompactItemize}

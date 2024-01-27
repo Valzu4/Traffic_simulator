@@ -1,0 +1,215 @@
+\hypertarget{classCar}{}\doxysection{Car Class Reference}
+\label{classCar}\index{Car@{Car}}
+
+
+\mbox{\hyperlink{classCar}{Car}} class represents a car in the city.  
+
+
+
+
+{\ttfamily \#include $<$Car.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCar_aac3aa53c12f2b980fd85126d8daf867b}{Car}} (\mbox{\hyperlink{classCity}{City}} \&city, const \mbox{\hyperlink{structPosition}{Position}} start\+Pos, const \mbox{\hyperlink{structPosition}{Position}} end\+Pos, int id)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classCar}{Car}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCar_a5933bb06e96b159fe339a128abda888a}{$\sim$\+Car}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classCar}{Car}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCar}{Car}} \& \mbox{\hyperlink{classCar_a31b27b1b9d2b34d201a91622daf23195}{operator=}} (\mbox{\hyperlink{classCar}{Car}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator for the \mbox{\hyperlink{classCar}{Car}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCar_a333b2b33d618ff12c55e76f9931a3737}{add\+Passenger}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&Kimi\+Raikkonen)
+\begin{DoxyCompactList}\small\item\em Adds a resident as a passenger to the car. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \mbox{\hyperlink{classCar_a08e6b59507d84ab45a4746dbee000b62}{get\+Passenger}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the passenger from the car. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCar_a71f3123d864af3ea5ef1a920af0602b1}{find\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Finds the shortest path from the start position to the end position using A$\ast$ algorithm. \end{DoxyCompactList}\item 
+const Direction \mbox{\hyperlink{classCar_a625bb3b3db7bd1135ace0bff3734d1dc}{get\+Dir}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current direction the car is facing. \end{DoxyCompactList}\item 
+Direction \mbox{\hyperlink{classCar_aad7540e4c798b09054808752156d3f51}{peek\+Dir}} () const
+\begin{DoxyCompactList}\small\item\em Peeks at the next direction in the car\textquotesingle{}s movement path. \end{DoxyCompactList}\item 
+Direction \mbox{\hyperlink{classCar_a5b761781320a3943126d75587e2849ff}{update\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em Updates the direction the car is facing during movement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_a10523212aa028398a1305c86fe8b3770}{create\+Path}} (std\+::vector$<$ Direction $>$ \&path)
+\begin{DoxyCompactList}\small\item\em Creates a custom path for the car. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_a1c05956af14e3b38d4665e562a0a6cd0}{simulate}} (\mbox{\hyperlink{structPosition}{Position}} cur)
+\begin{DoxyCompactList}\small\item\em Simulates the daily routine and actions of residents inside the car. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCar}{Car}} class represents a car in the city. 
+
+The car class contains the information about the car and the functions that simulate the car\textquotesingle{}s actions in the simulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCar_aac3aa53c12f2b980fd85126d8daf867b}\label{classCar_aac3aa53c12f2b980fd85126d8daf867b}} 
+\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}}
+{\footnotesize\ttfamily Car\+::\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{const \mbox{\hyperlink{structPosition}{Position}}}]{start\+Pos,  }\item[{const \mbox{\hyperlink{structPosition}{Position}}}]{end\+Pos,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classCar}{Car}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Reference to the \mbox{\hyperlink{classCity}{City}} object. \\
+\hline
+{\em start\+Pos} & Initial position of the car. \\
+\hline
+{\em end\+Pos} & Final destination of the car. \\
+\hline
+{\em id} & Unique identifier for the car. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCar_a5933bb06e96b159fe339a128abda888a}\label{classCar_a5933bb06e96b159fe339a128abda888a}} 
+\index{Car@{Car}!````~Car@{$\sim$Car}}
+\index{````~Car@{$\sim$Car}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{$\sim$Car()}{~Car()}}
+{\footnotesize\ttfamily Car\+::$\sim$\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classCar}{Car}} class. 
+
+Moves residents in the car to their final destination building. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCar_a333b2b33d618ff12c55e76f9931a3737}\label{classCar_a333b2b33d618ff12c55e76f9931a3737}} 
+\index{Car@{Car}!addPassenger@{addPassenger}}
+\index{addPassenger@{addPassenger}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{addPassenger()}{addPassenger()}}
+{\footnotesize\ttfamily bool Car\+::add\+Passenger (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&}]{Kimi\+Raikkonen }\end{DoxyParamCaption})}
+
+
+
+Adds a resident as a passenger to the car. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Kimi\+Raikkonen} & Reference to the resident to be added as a passenger. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the addition is successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_a10523212aa028398a1305c86fe8b3770}\label{classCar_a10523212aa028398a1305c86fe8b3770}} 
+\index{Car@{Car}!createPath@{createPath}}
+\index{createPath@{createPath}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{createPath()}{createPath()}}
+{\footnotesize\ttfamily void Car\+::create\+Path (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Direction $>$ \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Creates a custom path for the car. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+\_\+} & The vector of directions representing the custom path. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCar_a71f3123d864af3ea5ef1a920af0602b1}\label{classCar_a71f3123d864af3ea5ef1a920af0602b1}} 
+\index{Car@{Car}!findPath@{findPath}}
+\index{findPath@{findPath}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{findPath()}{findPath()}}
+{\footnotesize\ttfamily int Car\+::find\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Finds the shortest path from the start position to the end position using A$\ast$ algorithm. 
+
+\begin{DoxyReturn}{Returns}
+The length of the found path, or -\/1 if no path is found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_a625bb3b3db7bd1135ace0bff3734d1dc}\label{classCar_a625bb3b3db7bd1135ace0bff3734d1dc}} 
+\index{Car@{Car}!getDir@{getDir}}
+\index{getDir@{getDir}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{getDir()}{getDir()}}
+{\footnotesize\ttfamily const Direction Car\+::get\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current direction the car is facing. 
+
+\begin{DoxyReturn}{Returns}
+The current direction of the car. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_a08e6b59507d84ab45a4746dbee000b62}\label{classCar_a08e6b59507d84ab45a4746dbee000b62}} 
+\index{Car@{Car}!getPassenger@{getPassenger}}
+\index{getPassenger@{getPassenger}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{getPassenger()}{getPassenger()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ Car\+::get\+Passenger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the passenger from the car. 
+
+\begin{DoxyReturn}{Returns}
+A unique pointer to the passenger resident, or nullptr if there is no passenger. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_a31b27b1b9d2b34d201a91622daf23195}\label{classCar_a31b27b1b9d2b34d201a91622daf23195}} 
+\index{Car@{Car}!operator=@{operator=}}
+\index{operator=@{operator=}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCar}{Car}} \& Car\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCar}{Car}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for the \mbox{\hyperlink{classCar}{Car}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another \mbox{\hyperlink{classCar}{Car}} object for assignment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the assigned \mbox{\hyperlink{classCar}{Car}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_aad7540e4c798b09054808752156d3f51}\label{classCar_aad7540e4c798b09054808752156d3f51}} 
+\index{Car@{Car}!peekDir@{peekDir}}
+\index{peekDir@{peekDir}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{peekDir()}{peekDir()}}
+{\footnotesize\ttfamily Direction Car\+::peek\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Peeks at the next direction in the car\textquotesingle{}s movement path. 
+
+\begin{DoxyReturn}{Returns}
+The next direction in the movement path. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_a1c05956af14e3b38d4665e562a0a6cd0}\label{classCar_a1c05956af14e3b38d4665e562a0a6cd0}} 
+\index{Car@{Car}!simulate@{simulate}}
+\index{simulate@{simulate}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Car\+::simulate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{cur }\end{DoxyParamCaption})}
+
+
+
+Simulates the daily routine and actions of residents inside the car. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur} & The current position of the car. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCar_a5b761781320a3943126d75587e2849ff}\label{classCar_a5b761781320a3943126d75587e2849ff}} 
+\index{Car@{Car}!updateDir@{updateDir}}
+\index{updateDir@{updateDir}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{updateDir()}{updateDir()}}
+{\footnotesize\ttfamily Direction Car\+::update\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the direction the car is facing during movement. 
+
+\begin{DoxyReturn}{Returns}
+The updated direction the car is facing. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Cars/Car.\+hpp\item 
+src/\+Cars/Car.\+cpp\end{DoxyCompactItemize}

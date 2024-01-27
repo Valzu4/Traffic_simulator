@@ -1,0 +1,240 @@
+\hypertarget{classResident}{}\doxysection{Resident Class Reference}
+\label{classResident}\index{Resident@{Resident}}
+
+
+\mbox{\hyperlink{classResident}{Resident}} class represents a resident in the city.  
+
+
+
+
+{\ttfamily \#include $<$Resident.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResident_a03e66828387d4bcb6b4030071852f22e}{Resident}} (\mbox{\hyperlink{classCity}{City}} \&city, \mbox{\hyperlink{structPosition}{Position}} current\+Pos, int id)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classResident}{Resident}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classResident_abac10894be30dd4347c23c87584d31e4}\label{classResident_abac10894be30dd4347c23c87584d31e4}} 
+\mbox{\hyperlink{classResident_abac10894be30dd4347c23c87584d31e4}{$\sim$\+Resident}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classResident}{Resident}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classResident_a45bb9edb35e376ed52a1700b01af54b9}{operator==}} (\mbox{\hyperlink{classResident}{Resident}} \&r)
+\begin{DoxyCompactList}\small\item\em Overloaded equality operator for comparing residents based on their IDs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classResident_a64bfc8afadfc69e6cc1cb045514cebde}{operator!=}} (\mbox{\hyperlink{classResident}{Resident}} \&r)
+\begin{DoxyCompactList}\small\item\em Overloaded inequality operator for comparing residents based on their IDs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classResident_aed4395ca87505b0d86c5947e58c8c800}{leave}} (const \mbox{\hyperlink{structPosition}{Position}} next\+Pos)
+\begin{DoxyCompactList}\small\item\em Initiates the process of a resident leaving their current position for a new destination. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResident_aa387d5b584711a0fe9e4f97b4c596d41}{find\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Finds the shortest path from the current position to the destination using A$\ast$ algorithm. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classResident_a6301b494d5052df14d152c06333b0cf1}\label{classResident_a6301b494d5052df14d152c06333b0cf1}} 
+void \mbox{\hyperlink{classResident_a6301b494d5052df14d152c06333b0cf1}{enter}} ()
+\begin{DoxyCompactList}\small\item\em Resets the resident\textquotesingle{}s movement state and clears the movement path. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResident_af3c42867579eb8e601271f27bfa92bbc}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the unique identifier of the resident. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structPosition}{Position}} \mbox{\hyperlink{classResident_afc05f9501e1cdb1b5cbf611550e5af52}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current position of the resident. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResident_ad26a99125a6ebf2b048f8e01a47254ee}{simulate}} (\mbox{\hyperlink{structPosition}{Position}} cur)
+\begin{DoxyCompactList}\small\item\em Simulates the daily routine and actions of the resident. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classResident_ae92112a77b2fab0a5401ca8e002b1d1a}{info}} () const
+\begin{DoxyCompactList}\small\item\em Provides information about the resident. \end{DoxyCompactList}\item 
+const Direction \mbox{\hyperlink{classResident_ab840872fa8b0fa8f4a59e02de4e5f493}{get\+Dir}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current direction the resident is facing. \end{DoxyCompactList}\item 
+Direction \mbox{\hyperlink{classResident_a16255fad3b075ffccbfb675e04e51471}{peek\+Dir}} () const
+\begin{DoxyCompactList}\small\item\em Peeks at the next direction in the resident\textquotesingle{}s movement path. \end{DoxyCompactList}\item 
+Direction \mbox{\hyperlink{classResident_a3f7044e045df7ea7076cfc4800ea28e1}{update\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em Updates the direction the resident is facing during movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classResident}{Resident}} class represents a resident in the city. 
+
+The resident class contains the information about the resident and the functions that simulate the resident\textquotesingle{}s actions in the simulation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResident_a03e66828387d4bcb6b4030071852f22e}\label{classResident_a03e66828387d4bcb6b4030071852f22e}} 
+\index{Resident@{Resident}!Resident@{Resident}}
+\index{Resident@{Resident}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{Resident()}{Resident()}}
+{\footnotesize\ttfamily Resident\+::\+Resident (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{\mbox{\hyperlink{structPosition}{Position}}}]{current\+Pos,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classResident}{Resident}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Reference to the \mbox{\hyperlink{classCity}{City}} object. \\
+\hline
+{\em current\+Pos} & Initial position of the resident. \\
+\hline
+{\em id} & Unique identifier for the resident. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResident_aa387d5b584711a0fe9e4f97b4c596d41}\label{classResident_aa387d5b584711a0fe9e4f97b4c596d41}} 
+\index{Resident@{Resident}!findPath@{findPath}}
+\index{findPath@{findPath}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{findPath()}{findPath()}}
+{\footnotesize\ttfamily int Resident\+::find\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Finds the shortest path from the current position to the destination using A$\ast$ algorithm. 
+
+\begin{DoxyReturn}{Returns}
+The length of the found path, or -\/1 if no path is found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_ab840872fa8b0fa8f4a59e02de4e5f493}\label{classResident_ab840872fa8b0fa8f4a59e02de4e5f493}} 
+\index{Resident@{Resident}!getDir@{getDir}}
+\index{getDir@{getDir}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{getDir()}{getDir()}}
+{\footnotesize\ttfamily const Direction Resident\+::get\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current direction the resident is facing. 
+
+\begin{DoxyReturn}{Returns}
+The current direction of the resident. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_af3c42867579eb8e601271f27bfa92bbc}\label{classResident_af3c42867579eb8e601271f27bfa92bbc}} 
+\index{Resident@{Resident}!getId@{getId}}
+\index{getId@{getId}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Resident\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the unique identifier of the resident. 
+
+\begin{DoxyReturn}{Returns}
+The ID of the resident. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_afc05f9501e1cdb1b5cbf611550e5af52}\label{classResident_afc05f9501e1cdb1b5cbf611550e5af52}} 
+\index{Resident@{Resident}!getPos@{getPos}}
+\index{getPos@{getPos}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structPosition}{Position}} Resident\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current position of the resident. 
+
+\begin{DoxyReturn}{Returns}
+The current position of the resident. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_ae92112a77b2fab0a5401ca8e002b1d1a}\label{classResident_ae92112a77b2fab0a5401ca8e002b1d1a}} 
+\index{Resident@{Resident}!info@{info}}
+\index{info@{info}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily std\+::string Resident\+::info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Provides information about the resident. 
+
+\begin{DoxyReturn}{Returns}
+A string containing information about the resident. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_aed4395ca87505b0d86c5947e58c8c800}\label{classResident_aed4395ca87505b0d86c5947e58c8c800}} 
+\index{Resident@{Resident}!leave@{leave}}
+\index{leave@{leave}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{leave()}{leave()}}
+{\footnotesize\ttfamily bool Resident\+::leave (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPosition}{Position}}}]{next\+Pos }\end{DoxyParamCaption})}
+
+
+
+Initiates the process of a resident leaving their current position for a new destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+Pos} & The position to which the resident intends to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the resident successfully initiates the move, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_a64bfc8afadfc69e6cc1cb045514cebde}\label{classResident_a64bfc8afadfc69e6cc1cb045514cebde}} 
+\index{Resident@{Resident}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Resident\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classResident}{Resident}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Overloaded inequality operator for comparing residents based on their IDs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Another \mbox{\hyperlink{classResident}{Resident}} object for comparison. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the residents have different IDs, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_a45bb9edb35e376ed52a1700b01af54b9}\label{classResident_a45bb9edb35e376ed52a1700b01af54b9}} 
+\index{Resident@{Resident}!operator==@{operator==}}
+\index{operator==@{operator==}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Resident\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classResident}{Resident}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Overloaded equality operator for comparing residents based on their IDs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Another \mbox{\hyperlink{classResident}{Resident}} object for comparison. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the residents have the same ID, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_a16255fad3b075ffccbfb675e04e51471}\label{classResident_a16255fad3b075ffccbfb675e04e51471}} 
+\index{Resident@{Resident}!peekDir@{peekDir}}
+\index{peekDir@{peekDir}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{peekDir()}{peekDir()}}
+{\footnotesize\ttfamily Direction Resident\+::peek\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Peeks at the next direction in the resident\textquotesingle{}s movement path. 
+
+\begin{DoxyReturn}{Returns}
+The next direction in the movement path. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResident_ad26a99125a6ebf2b048f8e01a47254ee}\label{classResident_ad26a99125a6ebf2b048f8e01a47254ee}} 
+\index{Resident@{Resident}!simulate@{simulate}}
+\index{simulate@{simulate}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Resident\+::simulate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{cur }\end{DoxyParamCaption})}
+
+
+
+Simulates the daily routine and actions of the resident. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cur} & The current position of the resident. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classResident_a3f7044e045df7ea7076cfc4800ea28e1}\label{classResident_a3f7044e045df7ea7076cfc4800ea28e1}} 
+\index{Resident@{Resident}!updateDir@{updateDir}}
+\index{updateDir@{updateDir}!Resident@{Resident}}
+\doxysubsubsection{\texorpdfstring{updateDir()}{updateDir()}}
+{\footnotesize\ttfamily Direction Resident\+::update\+Dir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the direction the resident is facing during movement. 
+
+\begin{DoxyReturn}{Returns}
+The updated direction the resident is facing. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Cars/Resident.\+hpp\item 
+src/\+Cars/Resident.\+cpp\end{DoxyCompactItemize}

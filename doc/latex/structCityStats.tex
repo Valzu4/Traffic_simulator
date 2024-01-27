@@ -1,0 +1,68 @@
+\hypertarget{structCityStats}{}\doxysection{City\+Stats Struct Reference}
+\label{structCityStats}\index{CityStats@{CityStats}}
+
+
+Struct representing statistics for the entire city.  
+
+
+
+
+{\ttfamily \#include $<$Utilities.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structCityStats_a721728a869b980f1758030cd5761574e}{increment\+Counter}} (int index, double percentage)
+\begin{DoxyCompactList}\small\item\em Increments the counter and sum for a specific hour. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{structCityStats_a9151fb9c0285d9b1948d7feaba5bf40e}{get\+Hourly\+Averages}} () const
+\begin{DoxyCompactList}\small\item\em Calculates and retrieves the hourly averages for percentages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structCityStats_a4b68f31edfe9b818bac49a8b114e38f9}\label{structCityStats_a4b68f31edfe9b818bac49a8b114e38f9}} 
+std\+::vector$<$ int $>$ {\bfseries counters}
+\item 
+\mbox{\Hypertarget{structCityStats_a06353ef2d61a867852464deffe9f9ea5}\label{structCityStats_a06353ef2d61a867852464deffe9f9ea5}} 
+std\+::vector$<$ double $>$ {\bfseries sums}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct representing statistics for the entire city. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structCityStats_a9151fb9c0285d9b1948d7feaba5bf40e}\label{structCityStats_a9151fb9c0285d9b1948d7feaba5bf40e}} 
+\index{CityStats@{CityStats}!getHourlyAverages@{getHourlyAverages}}
+\index{getHourlyAverages@{getHourlyAverages}!CityStats@{CityStats}}
+\doxysubsubsection{\texorpdfstring{getHourlyAverages()}{getHourlyAverages()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ City\+Stats\+::get\+Hourly\+Averages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates and retrieves the hourly averages for percentages. 
+
+\begin{DoxyReturn}{Returns}
+A vector of double representing the hourly averages for percentages. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structCityStats_a721728a869b980f1758030cd5761574e}\label{structCityStats_a721728a869b980f1758030cd5761574e}} 
+\index{CityStats@{CityStats}!incrementCounter@{incrementCounter}}
+\index{incrementCounter@{incrementCounter}!CityStats@{CityStats}}
+\doxysubsubsection{\texorpdfstring{incrementCounter()}{incrementCounter()}}
+{\footnotesize\ttfamily void City\+Stats\+::increment\+Counter (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{double}]{percentage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increments the counter and sum for a specific hour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Hour index. \\
+\hline
+{\em percentage} & Percentage value to be added to the sum. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Utilities.\+hpp\end{DoxyCompactItemize}

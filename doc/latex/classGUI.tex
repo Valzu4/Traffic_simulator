@@ -1,0 +1,191 @@
+\hypertarget{classGUI}{}\doxysection{GUI Class Reference}
+\label{classGUI}\index{GUI@{GUI}}
+
+
+Represents the \mbox{\hyperlink{classGUI}{GUI}} for interacting with the \mbox{\hyperlink{classCity}{City}}.  
+
+
+
+
+{\ttfamily \#include $<$GUI.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGUI_a07b0dd96ec8027d377d34fe4040c08db}{GUI}} (\mbox{\hyperlink{classCity}{City}} \&city, int size)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classGUI}{GUI}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGUI_aa7c70ce9a17cf81087e09005c1b48c29}\label{classGUI_aa7c70ce9a17cf81087e09005c1b48c29}} 
+void \mbox{\hyperlink{classGUI_aa7c70ce9a17cf81087e09005c1b48c29}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the window and all the elements needed for the \mbox{\hyperlink{classGUI}{GUI}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGUI_a9c03d08424bd4a635b909b8ffbff5abb}\label{classGUI_a9c03d08424bd4a635b909b8ffbff5abb}} 
+void \mbox{\hyperlink{classGUI_a9c03d08424bd4a635b909b8ffbff5abb}{handle\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Handles all the possible events in the \mbox{\hyperlink{classGUI}{GUI}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGUI_a18c2ee11de8ba7f403ebd8bde4f99ee1}\label{classGUI_a18c2ee11de8ba7f403ebd8bde4f99ee1}} 
+void \mbox{\hyperlink{classGUI_a18c2ee11de8ba7f403ebd8bde4f99ee1}{draw\+And\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Draws and displays the \mbox{\hyperlink{classGUI}{GUI}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGUI_aac5cd2fc4352819eb9d69a4ff3914887}{is\+Open}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the \mbox{\hyperlink{classGUI}{GUI}} window is open. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGUI_a259687f6532d155f79cc1e2cb9bec426}{is\+Paused}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the simulation is paused. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGUI_aa1fa01b3efb03fa8e4eb984eb1b07fe0}{has\+City\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the city has changed since the last time the simulation paused. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGUI_a485caac3247434606eccc10ec26e4d4b}{set\+Changed}} (bool val)
+\begin{DoxyCompactList}\small\item\em Sets the changed status of the city. \end{DoxyCompactList}\item 
+Tool \mbox{\hyperlink{classGUI_a6944d608869465f8e5b22cd3dd1dbac6}{current\+Tool\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current tool type selected in the \mbox{\hyperlink{classGUI}{GUI}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGUI_ae0fe0e92dcdb10ec59ac3dbcb803c37a}{draw\+Histogram}} (std\+::vector$<$ double $>$ data, std\+::string y\+Label, int type)
+\begin{DoxyCompactList}\small\item\em Opens another window and draws a histogram on that window based on the data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGUI_a6fe52ee18c167588ea63ad7de227e65d}{read\+CSV}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Reads a \mbox{\hyperlink{classCity}{City}} from a CSV file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGUI_a0db99022afde2c63cdf3499dd5c7e418}{write\+CSV}} (\mbox{\hyperlink{classCity}{City}} \&city, const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Writes the \mbox{\hyperlink{classCity}{City}} to a CSV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the \mbox{\hyperlink{classGUI}{GUI}} for interacting with the \mbox{\hyperlink{classCity}{City}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGUI_a07b0dd96ec8027d377d34fe4040c08db}\label{classGUI_a07b0dd96ec8027d377d34fe4040c08db}} 
+\index{GUI@{GUI}!GUI@{GUI}}
+\index{GUI@{GUI}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{GUI()}{GUI()}}
+{\footnotesize\ttfamily GUI\+::\+GUI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classGUI}{GUI}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Reference to the \mbox{\hyperlink{classCity}{City}} object. \\
+\hline
+{\em size} & Size parameter for the \mbox{\hyperlink{classGUI}{GUI}} representing the size of the \mbox{\hyperlink{classCity}{City}} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGUI_a6944d608869465f8e5b22cd3dd1dbac6}\label{classGUI_a6944d608869465f8e5b22cd3dd1dbac6}} 
+\index{GUI@{GUI}!currentToolType@{currentToolType}}
+\index{currentToolType@{currentToolType}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{currentToolType()}{currentToolType()}}
+{\footnotesize\ttfamily Tool GUI\+::current\+Tool\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current tool type selected in the \mbox{\hyperlink{classGUI}{GUI}}. 
+
+\begin{DoxyReturn}{Returns}
+The current tool type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGUI_ae0fe0e92dcdb10ec59ac3dbcb803c37a}\label{classGUI_ae0fe0e92dcdb10ec59ac3dbcb803c37a}} 
+\index{GUI@{GUI}!drawHistogram@{drawHistogram}}
+\index{drawHistogram@{drawHistogram}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{drawHistogram()}{drawHistogram()}}
+{\footnotesize\ttfamily void GUI\+::draw\+Histogram (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$}]{data,  }\item[{std\+::string}]{y\+Label,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Opens another window and draws a histogram on that window based on the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Vector of data for the histogram. \\
+\hline
+{\em y\+Label} & Label for the y-\/axis. \\
+\hline
+{\em type} & Type parameter for the histogram. 1 is for \mbox{\hyperlink{classRoad}{Road}} histogram, 2 is for \mbox{\hyperlink{classCity}{City}} and 3 is for \mbox{\hyperlink{classIntersection}{Intersection}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGUI_aa1fa01b3efb03fa8e4eb984eb1b07fe0}\label{classGUI_aa1fa01b3efb03fa8e4eb984eb1b07fe0}} 
+\index{GUI@{GUI}!hasCityChanged@{hasCityChanged}}
+\index{hasCityChanged@{hasCityChanged}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{hasCityChanged()}{hasCityChanged()}}
+{\footnotesize\ttfamily bool GUI\+::has\+City\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the city has changed since the last time the simulation paused. 
+
+\begin{DoxyReturn}{Returns}
+True if the city has changed, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGUI_aac5cd2fc4352819eb9d69a4ff3914887}\label{classGUI_aac5cd2fc4352819eb9d69a4ff3914887}} 
+\index{GUI@{GUI}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily bool GUI\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the \mbox{\hyperlink{classGUI}{GUI}} window is open. 
+
+\begin{DoxyReturn}{Returns}
+True if the window is open, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGUI_a259687f6532d155f79cc1e2cb9bec426}\label{classGUI_a259687f6532d155f79cc1e2cb9bec426}} 
+\index{GUI@{GUI}!isPaused@{isPaused}}
+\index{isPaused@{isPaused}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{isPaused()}{isPaused()}}
+{\footnotesize\ttfamily bool GUI\+::is\+Paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the simulation is paused. 
+
+\begin{DoxyReturn}{Returns}
+True if paused, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGUI_a6fe52ee18c167588ea63ad7de227e65d}\label{classGUI_a6fe52ee18c167588ea63ad7de227e65d}} 
+\index{GUI@{GUI}!readCSV@{readCSV}}
+\index{readCSV@{readCSV}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{readCSV()}{readCSV()}}
+{\footnotesize\ttfamily void GUI\+::read\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Reads a \mbox{\hyperlink{classCity}{City}} from a CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the CSV file to read. This is \char`\"{}\+City.\+csv\char`\"{} in the program. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGUI_a485caac3247434606eccc10ec26e4d4b}\label{classGUI_a485caac3247434606eccc10ec26e4d4b}} 
+\index{GUI@{GUI}!setChanged@{setChanged}}
+\index{setChanged@{setChanged}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{setChanged()}{setChanged()}}
+{\footnotesize\ttfamily void GUI\+::set\+Changed (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the changed status of the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & New value for the city\+Changed flag. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGUI_a0db99022afde2c63cdf3499dd5c7e418}\label{classGUI_a0db99022afde2c63cdf3499dd5c7e418}} 
+\index{GUI@{GUI}!writeCSV@{writeCSV}}
+\index{writeCSV@{writeCSV}!GUI@{GUI}}
+\doxysubsubsection{\texorpdfstring{writeCSV()}{writeCSV()}}
+{\footnotesize\ttfamily void GUI\+::write\+CSV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Writes the \mbox{\hyperlink{classCity}{City}} to a CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Reference to the \mbox{\hyperlink{classCity}{City}} object. \\
+\hline
+{\em filename} & Name of the CSV file to write. This is \char`\"{}\+City.\+csv\char`\"{} in the program. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/GUI.\+hpp\item 
+src/GUI.\+cpp\end{DoxyCompactItemize}

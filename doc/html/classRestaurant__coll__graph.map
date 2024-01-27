@@ -1,0 +1,8 @@
+<map id="Restaurant" name="Restaurant">
+<area shape="rect" id="node1" title=" " alt="" coords="25,323,119,349"/>
+<area shape="rect" id="node2" href="$classCommercial.html" title=" " alt="" coords="21,247,123,273"/>
+<area shape="rect" id="node3" href="$classBuilding.html" title=" " alt="" coords="35,171,109,197"/>
+<area shape="rect" id="node4" href="$classSquare.html" title=" " alt="" coords="39,95,105,121"/>
+<area shape="rect" id="node5" href="$classCity.html" title=" " alt="" coords="5,5,53,32"/>
+<area shape="rect" id="node6" href="$structPosition.html" title="Struct representing a position with x and y coordinates." alt="" coords="77,5,152,32"/>
+</map>

@@ -1,0 +1,66 @@
+\hypertarget{structIntersectionStats}{}\doxysection{Intersection\+Stats Struct Reference}
+\label{structIntersectionStats}\index{IntersectionStats@{IntersectionStats}}
+
+
+Struct representing statistics for an intersection.  
+
+
+
+
+{\ttfamily \#include $<$Utilities.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structIntersectionStats_a6397b75a00b890a8963be87a5e8dec3e}{increment\+Counter}} (int index)
+\begin{DoxyCompactList}\small\item\em Increments the counter for a specific hour. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{structIntersectionStats_ae83dd7c9d6ad2b6393a6b39b40ab9e13}{get\+Total\+Cars}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the total cars for each hour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structIntersectionStats_a5e5f3dd47968da925bf553e870ae2d7b}\label{structIntersectionStats_a5e5f3dd47968da925bf553e870ae2d7b}} 
+std\+::vector$<$ double $>$ {\bfseries car\+Counters}
+\item 
+\mbox{\Hypertarget{structIntersectionStats_a6c44eb0211277e08d71eac9cefe234c5}\label{structIntersectionStats_a6c44eb0211277e08d71eac9cefe234c5}} 
+int {\bfseries overall\+Counter}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct representing statistics for an intersection. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structIntersectionStats_ae83dd7c9d6ad2b6393a6b39b40ab9e13}\label{structIntersectionStats_ae83dd7c9d6ad2b6393a6b39b40ab9e13}} 
+\index{IntersectionStats@{IntersectionStats}!getTotalCars@{getTotalCars}}
+\index{getTotalCars@{getTotalCars}!IntersectionStats@{IntersectionStats}}
+\doxysubsubsection{\texorpdfstring{getTotalCars()}{getTotalCars()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Intersection\+Stats\+::get\+Total\+Cars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the total cars for each hour. 
+
+\begin{DoxyReturn}{Returns}
+A vector of double representing the total cars for each hour. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structIntersectionStats_a6397b75a00b890a8963be87a5e8dec3e}\label{structIntersectionStats_a6397b75a00b890a8963be87a5e8dec3e}} 
+\index{IntersectionStats@{IntersectionStats}!incrementCounter@{incrementCounter}}
+\index{incrementCounter@{incrementCounter}!IntersectionStats@{IntersectionStats}}
+\doxysubsubsection{\texorpdfstring{incrementCounter()}{incrementCounter()}}
+{\footnotesize\ttfamily void Intersection\+Stats\+::increment\+Counter (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increments the counter for a specific hour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Hour index. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Utilities.\+hpp\end{DoxyCompactItemize}

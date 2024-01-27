@@ -1,0 +1,180 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Building Class Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{7}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Building()}{7}{subsubsection.3.1.2.1}%
+\contentsline {subsection}{\numberline {3.1.3}Member Function Documentation}{7}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}addCar()}{7}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}addPed()}{8}{subsubsection.3.1.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.3.3}addResident()}{8}{subsubsection.3.1.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.4}buildingType()}{9}{subsubsection.3.1.3.4}%
+\contentsline {subsubsection}{\numberline {3.1.3.5}getCapacity()}{9}{subsubsection.3.1.3.5}%
+\contentsline {subsubsection}{\numberline {3.1.3.6}getCarCount()}{9}{subsubsection.3.1.3.6}%
+\contentsline {subsubsection}{\numberline {3.1.3.7}getResidents()}{9}{subsubsection.3.1.3.7}%
+\contentsline {subsubsection}{\numberline {3.1.3.8}isBuilding()}{10}{subsubsection.3.1.3.8}%
+\contentsline {subsubsection}{\numberline {3.1.3.9}joinCar()}{10}{subsubsection.3.1.3.9}%
+\contentsline {subsubsection}{\numberline {3.1.3.10}newResident()}{10}{subsubsection.3.1.3.10}%
+\contentsline {subsubsection}{\numberline {3.1.3.11}removeResident()}{11}{subsubsection.3.1.3.11}%
+\contentsline {subsubsection}{\numberline {3.1.3.12}simulate()}{11}{subsubsection.3.1.3.12}%
+\contentsline {subsection}{\numberline {3.1.4}Member Data Documentation}{11}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}cars\_}{12}{subsubsection.3.1.4.1}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}pedestrians\_}{12}{subsubsection.3.1.4.2}%
+\contentsline {subsubsection}{\numberline {3.1.4.3}residents\_}{12}{subsubsection.3.1.4.3}%
+\contentsline {section}{\numberline {3.2}Car Class Reference}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{13}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}Car()}{13}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}$\sim $Car()}{14}{subsubsection.3.2.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Member Function Documentation}{14}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}addPassenger()}{14}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}createPath()}{14}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}findPath()}{15}{subsubsection.3.2.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}getDir()}{15}{subsubsection.3.2.3.4}%
+\contentsline {subsubsection}{\numberline {3.2.3.5}getPassenger()}{15}{subsubsection.3.2.3.5}%
+\contentsline {subsubsection}{\numberline {3.2.3.6}operator=()}{15}{subsubsection.3.2.3.6}%
+\contentsline {subsubsection}{\numberline {3.2.3.7}peekDir()}{16}{subsubsection.3.2.3.7}%
+\contentsline {subsubsection}{\numberline {3.2.3.8}simulate()}{16}{subsubsection.3.2.3.8}%
+\contentsline {subsubsection}{\numberline {3.2.3.9}updateDir()}{16}{subsubsection.3.2.3.9}%
+\contentsline {section}{\numberline {3.3}City Class Reference}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{18}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{18}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}City()}{18}{subsubsection.3.3.2.1}%
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{18}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}add()}{18}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}averageRoadTrafficPercentage()}{19}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}carsOnRoads()}{19}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}clearAndResize()}{19}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}currentRoadTrafficPercentage()}{19}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}exportStats()}{20}{subsubsection.3.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.3.7}getCity()}{20}{subsubsection.3.3.3.7}%
+\contentsline {subsubsection}{\numberline {3.3.3.8}getCitySize()}{20}{subsubsection.3.3.3.8}%
+\contentsline {subsubsection}{\numberline {3.3.3.9}getCommercials()}{20}{subsubsection.3.3.3.9}%
+\contentsline {subsubsection}{\numberline {3.3.3.10}getHourCounters()}{21}{subsubsection.3.3.3.10}%
+\contentsline {subsubsection}{\numberline {3.3.3.11}getIndustrials()}{21}{subsubsection.3.3.3.11}%
+\contentsline {subsubsection}{\numberline {3.3.3.12}getIntersections()}{21}{subsubsection.3.3.3.12}%
+\contentsline {subsubsection}{\numberline {3.3.3.13}getResidentAmount()}{21}{subsubsection.3.3.3.13}%
+\contentsline {subsubsection}{\numberline {3.3.3.14}getResidentCount()}{22}{subsubsection.3.3.3.14}%
+\contentsline {subsubsection}{\numberline {3.3.3.15}getResidentials()}{22}{subsubsection.3.3.3.15}%
+\contentsline {subsubsection}{\numberline {3.3.3.16}getRoads()}{22}{subsubsection.3.3.3.16}%
+\contentsline {subsubsection}{\numberline {3.3.3.17}getSquare()}{22}{subsubsection.3.3.3.17}%
+\contentsline {subsubsection}{\numberline {3.3.3.18}getStats()}{23}{subsubsection.3.3.3.18}%
+\contentsline {subsubsection}{\numberline {3.3.3.19}getTime()}{23}{subsubsection.3.3.3.19}%
+\contentsline {section}{\numberline {3.4}City\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats Struct Reference}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{24}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Member Function Documentation}{24}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}getHourlyAverages()}{24}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}incrementCounter()}{24}{subsubsection.3.4.2.2}%
+\contentsline {section}{\numberline {3.5}Commercial Class Reference}{24}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{26}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{26}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Commercial()}{26}{subsubsection.3.5.2.1}%
+\contentsline {subsection}{\numberline {3.5.3}Member Function Documentation}{26}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}buildingType()}{26}{subsubsection.3.5.3.1}%
+\contentsline {section}{\numberline {3.6}GUI Class Reference}{27}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{27}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Constructor \& Destructor Documentation}{27}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}GUI()}{27}{subsubsection.3.6.2.1}%
+\contentsline {subsection}{\numberline {3.6.3}Member Function Documentation}{28}{subsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.1}currentToolType()}{28}{subsubsection.3.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.6.3.2}drawHistogram()}{28}{subsubsection.3.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.6.3.3}hasCityChanged()}{28}{subsubsection.3.6.3.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.4}isOpen()}{29}{subsubsection.3.6.3.4}%
+\contentsline {subsubsection}{\numberline {3.6.3.5}isPaused()}{29}{subsubsection.3.6.3.5}%
+\contentsline {subsubsection}{\numberline {3.6.3.6}readCSV()}{29}{subsubsection.3.6.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.3.7}setChanged()}{29}{subsubsection.3.6.3.7}%
+\contentsline {subsubsection}{\numberline {3.6.3.8}writeCSV()}{30}{subsubsection.3.6.3.8}%
+\contentsline {section}{\numberline {3.7}Industrial Class Reference}{30}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{31}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Constructor \& Destructor Documentation}{31}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}Industrial()}{31}{subsubsection.3.7.2.1}%
+\contentsline {subsection}{\numberline {3.7.3}Member Function Documentation}{32}{subsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.1}buildingType()}{32}{subsubsection.3.7.3.1}%
+\contentsline {section}{\numberline {3.8}Intersection Class Reference}{32}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{34}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Constructor \& Destructor Documentation}{34}{subsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}Intersection()}{34}{subsubsection.3.8.2.1}%
+\contentsline {subsection}{\numberline {3.8.3}Member Function Documentation}{34}{subsection.3.8.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.1}addCar()}{34}{subsubsection.3.8.3.1}%
+\contentsline {subsubsection}{\numberline {3.8.3.2}addPed()}{35}{subsubsection.3.8.3.2}%
+\contentsline {subsubsection}{\numberline {3.8.3.3}getCarCount()}{35}{subsubsection.3.8.3.3}%
+\contentsline {subsubsection}{\numberline {3.8.3.4}getPedCount()}{35}{subsubsection.3.8.3.4}%
+\contentsline {subsubsection}{\numberline {3.8.3.5}getStats()}{36}{subsubsection.3.8.3.5}%
+\contentsline {subsubsection}{\numberline {3.8.3.6}getType()}{36}{subsubsection.3.8.3.6}%
+\contentsline {subsubsection}{\numberline {3.8.3.7}isIntersection()}{36}{subsubsection.3.8.3.7}%
+\contentsline {subsubsection}{\numberline {3.8.3.8}isRoad()}{36}{subsubsection.3.8.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.3.9}joinCar()}{36}{subsubsection.3.8.3.9}%
+\contentsline {subsubsection}{\numberline {3.8.3.10}simulate()}{37}{subsubsection.3.8.3.10}%
+\contentsline {section}{\numberline {3.9}Intersection\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats Struct Reference}{37}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{38}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Member Function Documentation}{38}{subsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.2.1}getTotalCars()}{38}{subsubsection.3.9.2.1}%
+\contentsline {subsubsection}{\numberline {3.9.2.2}incrementCounter()}{38}{subsubsection.3.9.2.2}%
+\contentsline {section}{\numberline {3.10}Position Struct Reference}{38}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{39}{subsection.3.10.1}%
+\contentsline {section}{\numberline {3.11}Resident Class Reference}{39}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{40}{subsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.11.2}Constructor \& Destructor Documentation}{40}{subsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.2.1}Resident()}{40}{subsubsection.3.11.2.1}%
+\contentsline {subsection}{\numberline {3.11.3}Member Function Documentation}{40}{subsection.3.11.3}%
+\contentsline {subsubsection}{\numberline {3.11.3.1}findPath()}{40}{subsubsection.3.11.3.1}%
+\contentsline {subsubsection}{\numberline {3.11.3.2}getDir()}{41}{subsubsection.3.11.3.2}%
+\contentsline {subsubsection}{\numberline {3.11.3.3}getId()}{41}{subsubsection.3.11.3.3}%
+\contentsline {subsubsection}{\numberline {3.11.3.4}getPos()}{41}{subsubsection.3.11.3.4}%
+\contentsline {subsubsection}{\numberline {3.11.3.5}info()}{41}{subsubsection.3.11.3.5}%
+\contentsline {subsubsection}{\numberline {3.11.3.6}leave()}{41}{subsubsection.3.11.3.6}%
+\contentsline {subsubsection}{\numberline {3.11.3.7}operator"!=()}{42}{subsubsection.3.11.3.7}%
+\contentsline {subsubsection}{\numberline {3.11.3.8}operator==()}{42}{subsubsection.3.11.3.8}%
+\contentsline {subsubsection}{\numberline {3.11.3.9}peekDir()}{42}{subsubsection.3.11.3.9}%
+\contentsline {subsubsection}{\numberline {3.11.3.10}simulate()}{43}{subsubsection.3.11.3.10}%
+\contentsline {subsubsection}{\numberline {3.11.3.11}updateDir()}{43}{subsubsection.3.11.3.11}%
+\contentsline {section}{\numberline {3.12}Residential Class Reference}{43}{section.3.12}%
+\contentsline {subsection}{\numberline {3.12.1}Detailed Description}{45}{subsection.3.12.1}%
+\contentsline {subsection}{\numberline {3.12.2}Constructor \& Destructor Documentation}{45}{subsection.3.12.2}%
+\contentsline {subsubsection}{\numberline {3.12.2.1}Residential()}{45}{subsubsection.3.12.2.1}%
+\contentsline {subsection}{\numberline {3.12.3}Member Function Documentation}{45}{subsection.3.12.3}%
+\contentsline {subsubsection}{\numberline {3.12.3.1}buildingType()}{45}{subsubsection.3.12.3.1}%
+\contentsline {section}{\numberline {3.13}Road Class Reference}{46}{section.3.13}%
+\contentsline {subsection}{\numberline {3.13.1}Detailed Description}{47}{subsection.3.13.1}%
+\contentsline {subsection}{\numberline {3.13.2}Constructor \& Destructor Documentation}{47}{subsection.3.13.2}%
+\contentsline {subsubsection}{\numberline {3.13.2.1}Road()}{47}{subsubsection.3.13.2.1}%
+\contentsline {subsection}{\numberline {3.13.3}Member Function Documentation}{48}{subsection.3.13.3}%
+\contentsline {subsubsection}{\numberline {3.13.3.1}addCar()}{48}{subsubsection.3.13.3.1}%
+\contentsline {subsubsection}{\numberline {3.13.3.2}addPed()}{48}{subsubsection.3.13.3.2}%
+\contentsline {subsubsection}{\numberline {3.13.3.3}averageTrafficPercent()}{49}{subsubsection.3.13.3.3}%
+\contentsline {subsubsection}{\numberline {3.13.3.4}getCarCount()}{49}{subsubsection.3.13.3.4}%
+\contentsline {subsubsection}{\numberline {3.13.3.5}getNECarCount()}{49}{subsubsection.3.13.3.5}%
+\contentsline {subsubsection}{\numberline {3.13.3.6}getPedCount()}{50}{subsubsection.3.13.3.6}%
+\contentsline {subsubsection}{\numberline {3.13.3.7}getSpeed()}{50}{subsubsection.3.13.3.7}%
+\contentsline {subsubsection}{\numberline {3.13.3.8}getStats()}{50}{subsubsection.3.13.3.8}%
+\contentsline {subsubsection}{\numberline {3.13.3.9}getSWCarCount()}{50}{subsubsection.3.13.3.9}%
+\contentsline {subsubsection}{\numberline {3.13.3.10}initSquare()}{51}{subsubsection.3.13.3.10}%
+\contentsline {subsubsection}{\numberline {3.13.3.11}isEW()}{51}{subsubsection.3.13.3.11}%
+\contentsline {subsubsection}{\numberline {3.13.3.12}isNS()}{51}{subsubsection.3.13.3.12}%
+\contentsline {subsubsection}{\numberline {3.13.3.13}isRoad()}{51}{subsubsection.3.13.3.13}%
+\contentsline {subsubsection}{\numberline {3.13.3.14}joinCar()}{51}{subsubsection.3.13.3.14}%
+\contentsline {subsubsection}{\numberline {3.13.3.15}simulate()}{52}{subsubsection.3.13.3.15}%
+\contentsline {section}{\numberline {3.14}Road\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats Struct Reference}{52}{section.3.14}%
+\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{53}{subsection.3.14.1}%
+\contentsline {subsection}{\numberline {3.14.2}Member Function Documentation}{53}{subsection.3.14.2}%
+\contentsline {subsubsection}{\numberline {3.14.2.1}getAverage()}{53}{subsubsection.3.14.2.1}%
+\contentsline {subsubsection}{\numberline {3.14.2.2}incrementCounter()}{53}{subsubsection.3.14.2.2}%
+\contentsline {section}{\numberline {3.15}Square Class Reference}{53}{section.3.15}%
+\contentsline {subsection}{\numberline {3.15.1}Detailed Description}{55}{subsection.3.15.1}%
+\contentsline {subsection}{\numberline {3.15.2}Constructor \& Destructor Documentation}{55}{subsection.3.15.2}%
+\contentsline {subsubsection}{\numberline {3.15.2.1}Square()}{55}{subsubsection.3.15.2.1}%
+\contentsline {subsection}{\numberline {3.15.3}Member Function Documentation}{56}{subsection.3.15.3}%
+\contentsline {subsubsection}{\numberline {3.15.3.1}addCar()}{56}{subsubsection.3.15.3.1}%
+\contentsline {subsubsection}{\numberline {3.15.3.2}addPed()}{56}{subsubsection.3.15.3.2}%
+\contentsline {subsubsection}{\numberline {3.15.3.3}getCarCount()}{57}{subsubsection.3.15.3.3}%
+\contentsline {subsubsection}{\numberline {3.15.3.4}getCoordinates()}{57}{subsubsection.3.15.3.4}%
+\contentsline {subsubsection}{\numberline {3.15.3.5}getNeighbour()}{57}{subsubsection.3.15.3.5}%
+\contentsline {subsubsection}{\numberline {3.15.3.6}getPedCount()}{58}{subsubsection.3.15.3.6}%
+\contentsline {subsubsection}{\numberline {3.15.3.7}joinCar()}{58}{subsubsection.3.15.3.7}%
+\contentsline {subsubsection}{\numberline {3.15.3.8}operator=()}{58}{subsubsection.3.15.3.8}%
+\contentsline {subsubsection}{\numberline {3.15.3.9}simulate()}{59}{subsubsection.3.15.3.9}%
+\contentsline {chapter}{Index}{61}{section*.41}%

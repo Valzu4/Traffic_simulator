@@ -1,0 +1,370 @@
+\begin{theindex}
+
+  \item {$\sim$Car}
+    \subitem {Car}, \hyperpage{14}
+
+  \indexspace
+
+  \item {add}
+    \subitem {City}, \hyperpage{18}
+  \item {addCar}
+    \subitem {Building}, \hyperpage{7}
+    \subitem {Intersection}, \hyperpage{34}
+    \subitem {Road}, \hyperpage{48}
+    \subitem {Square}, \hyperpage{56}
+  \item {addPassenger}
+    \subitem {Car}, \hyperpage{14}
+  \item {addPed}
+    \subitem {Building}, \hyperpage{8}
+    \subitem {Intersection}, \hyperpage{35}
+    \subitem {Road}, \hyperpage{48}
+    \subitem {Square}, \hyperpage{56}
+  \item {addResident}
+    \subitem {Building}, \hyperpage{8}
+  \item {averageRoadTrafficPercentage}
+    \subitem {City}, \hyperpage{19}
+  \item {averageTrafficPercent}
+    \subitem {Road}, \hyperpage{49}
+
+  \indexspace
+
+  \item {Building}, \hyperpage{5}
+    \subitem {addCar}, \hyperpage{7}
+    \subitem {addPed}, \hyperpage{8}
+    \subitem {addResident}, \hyperpage{8}
+    \subitem {Building}, \hyperpage{7}
+    \subitem {buildingType}, \hyperpage{8}
+    \subitem {cars\_}, \hyperpage{11}
+    \subitem {getCapacity}, \hyperpage{9}
+    \subitem {getCarCount}, \hyperpage{9}
+    \subitem {getResidents}, \hyperpage{9}
+    \subitem {isBuilding}, \hyperpage{9}
+    \subitem {joinCar}, \hyperpage{10}
+    \subitem {newResident}, \hyperpage{10}
+    \subitem {pedestrians\_}, \hyperpage{12}
+    \subitem {removeResident}, \hyperpage{11}
+    \subitem {residents\_}, \hyperpage{12}
+    \subitem {simulate}, \hyperpage{11}
+  \item {buildingType}
+    \subitem {Building}, \hyperpage{8}
+    \subitem {Commercial}, \hyperpage{26}
+    \subitem {Industrial}, \hyperpage{32}
+    \subitem {Residential}, \hyperpage{45}
+
+  \indexspace
+
+  \item {Car}, \hyperpage{12}
+    \subitem {$\sim$Car}, \hyperpage{14}
+    \subitem {addPassenger}, \hyperpage{14}
+    \subitem {Car}, \hyperpage{13}
+    \subitem {createPath}, \hyperpage{14}
+    \subitem {findPath}, \hyperpage{14}
+    \subitem {getDir}, \hyperpage{15}
+    \subitem {getPassenger}, \hyperpage{15}
+    \subitem {operator=}, \hyperpage{15}
+    \subitem {peekDir}, \hyperpage{16}
+    \subitem {simulate}, \hyperpage{16}
+    \subitem {updateDir}, \hyperpage{16}
+  \item {cars\_}
+    \subitem {Building}, \hyperpage{11}
+  \item {carsOnRoads}
+    \subitem {City}, \hyperpage{19}
+  \item {City}, \hyperpage{17}
+    \subitem {add}, \hyperpage{18}
+    \subitem {averageRoadTrafficPercentage}, \hyperpage{19}
+    \subitem {carsOnRoads}, \hyperpage{19}
+    \subitem {City}, \hyperpage{18}
+    \subitem {clearAndResize}, \hyperpage{19}
+    \subitem {currentRoadTrafficPercentage}, \hyperpage{19}
+    \subitem {exportStats}, \hyperpage{19}
+    \subitem {getCity}, \hyperpage{20}
+    \subitem {getCitySize}, \hyperpage{20}
+    \subitem {getCommercials}, \hyperpage{20}
+    \subitem {getHourCounters}, \hyperpage{20}
+    \subitem {getIndustrials}, \hyperpage{21}
+    \subitem {getIntersections}, \hyperpage{21}
+    \subitem {getResidentAmount}, \hyperpage{21}
+    \subitem {getResidentCount}, \hyperpage{21}
+    \subitem {getResidentials}, \hyperpage{22}
+    \subitem {getRoads}, \hyperpage{22}
+    \subitem {getSquare}, \hyperpage{22}
+    \subitem {getStats}, \hyperpage{23}
+    \subitem {getTime}, \hyperpage{23}
+  \item {CityStats}, \hyperpage{23}
+    \subitem {getHourlyAverages}, \hyperpage{24}
+    \subitem {incrementCounter}, \hyperpage{24}
+  \item {clearAndResize}
+    \subitem {City}, \hyperpage{19}
+  \item {Commercial}, \hyperpage{24}
+    \subitem {buildingType}, \hyperpage{26}
+    \subitem {Commercial}, \hyperpage{26}
+  \item {createPath}
+    \subitem {Car}, \hyperpage{14}
+  \item {currentRoadTrafficPercentage}
+    \subitem {City}, \hyperpage{19}
+  \item {currentToolType}
+    \subitem {GUI}, \hyperpage{28}
+
+  \indexspace
+
+  \item {drawHistogram}
+    \subitem {GUI}, \hyperpage{28}
+
+  \indexspace
+
+  \item {exportStats}
+    \subitem {City}, \hyperpage{19}
+
+  \indexspace
+
+  \item {findPath}
+    \subitem {Car}, \hyperpage{14}
+    \subitem {Resident}, \hyperpage{40}
+
+  \indexspace
+
+  \item {getAverage}
+    \subitem {RoadStats}, \hyperpage{53}
+  \item {getCapacity}
+    \subitem {Building}, \hyperpage{9}
+  \item {getCarCount}
+    \subitem {Building}, \hyperpage{9}
+    \subitem {Intersection}, \hyperpage{35}
+    \subitem {Road}, \hyperpage{49}
+    \subitem {Square}, \hyperpage{57}
+  \item {getCity}
+    \subitem {City}, \hyperpage{20}
+  \item {getCitySize}
+    \subitem {City}, \hyperpage{20}
+  \item {getCommercials}
+    \subitem {City}, \hyperpage{20}
+  \item {getCoordinates}
+    \subitem {Square}, \hyperpage{57}
+  \item {getDir}
+    \subitem {Car}, \hyperpage{15}
+    \subitem {Resident}, \hyperpage{40}
+  \item {getHourCounters}
+    \subitem {City}, \hyperpage{20}
+  \item {getHourlyAverages}
+    \subitem {CityStats}, \hyperpage{24}
+  \item {getId}
+    \subitem {Resident}, \hyperpage{41}
+  \item {getIndustrials}
+    \subitem {City}, \hyperpage{21}
+  \item {getIntersections}
+    \subitem {City}, \hyperpage{21}
+  \item {getNECarCount}
+    \subitem {Road}, \hyperpage{49}
+  \item {getNeighbour}
+    \subitem {Square}, \hyperpage{57}
+  \item {getPassenger}
+    \subitem {Car}, \hyperpage{15}
+  \item {getPedCount}
+    \subitem {Intersection}, \hyperpage{35}
+    \subitem {Road}, \hyperpage{49}
+    \subitem {Square}, \hyperpage{57}
+  \item {getPos}
+    \subitem {Resident}, \hyperpage{41}
+  \item {getResidentAmount}
+    \subitem {City}, \hyperpage{21}
+  \item {getResidentCount}
+    \subitem {City}, \hyperpage{21}
+  \item {getResidentials}
+    \subitem {City}, \hyperpage{22}
+  \item {getResidents}
+    \subitem {Building}, \hyperpage{9}
+  \item {getRoads}
+    \subitem {City}, \hyperpage{22}
+  \item {getSpeed}
+    \subitem {Road}, \hyperpage{50}
+  \item {getSquare}
+    \subitem {City}, \hyperpage{22}
+  \item {getStats}
+    \subitem {City}, \hyperpage{23}
+    \subitem {Intersection}, \hyperpage{35}
+    \subitem {Road}, \hyperpage{50}
+  \item {getSWCarCount}
+    \subitem {Road}, \hyperpage{50}
+  \item {getTime}
+    \subitem {City}, \hyperpage{23}
+  \item {getTotalCars}
+    \subitem {IntersectionStats}, \hyperpage{38}
+  \item {getType}
+    \subitem {Intersection}, \hyperpage{36}
+  \item {GUI}, \hyperpage{27}
+    \subitem {currentToolType}, \hyperpage{28}
+    \subitem {drawHistogram}, \hyperpage{28}
+    \subitem {GUI}, \hyperpage{27}
+    \subitem {hasCityChanged}, \hyperpage{28}
+    \subitem {isOpen}, \hyperpage{28}
+    \subitem {isPaused}, \hyperpage{29}
+    \subitem {readCSV}, \hyperpage{29}
+    \subitem {setChanged}, \hyperpage{29}
+    \subitem {writeCSV}, \hyperpage{30}
+
+  \indexspace
+
+  \item {hasCityChanged}
+    \subitem {GUI}, \hyperpage{28}
+
+  \indexspace
+
+  \item {incrementCounter}
+    \subitem {CityStats}, \hyperpage{24}
+    \subitem {IntersectionStats}, \hyperpage{38}
+    \subitem {RoadStats}, \hyperpage{53}
+  \item {Industrial}, \hyperpage{30}
+    \subitem {buildingType}, \hyperpage{32}
+    \subitem {Industrial}, \hyperpage{31}
+  \item {info}
+    \subitem {Resident}, \hyperpage{41}
+  \item {initSquare}
+    \subitem {Road}, \hyperpage{50}
+  \item {Intersection}, \hyperpage{32}
+    \subitem {addCar}, \hyperpage{34}
+    \subitem {addPed}, \hyperpage{35}
+    \subitem {getCarCount}, \hyperpage{35}
+    \subitem {getPedCount}, \hyperpage{35}
+    \subitem {getStats}, \hyperpage{35}
+    \subitem {getType}, \hyperpage{36}
+    \subitem {Intersection}, \hyperpage{34}
+    \subitem {isIntersection}, \hyperpage{36}
+    \subitem {isRoad}, \hyperpage{36}
+    \subitem {joinCar}, \hyperpage{36}
+    \subitem {simulate}, \hyperpage{37}
+  \item {IntersectionStats}, \hyperpage{37}
+    \subitem {getTotalCars}, \hyperpage{38}
+    \subitem {incrementCounter}, \hyperpage{38}
+  \item {isBuilding}
+    \subitem {Building}, \hyperpage{9}
+  \item {isEW}
+    \subitem {Road}, \hyperpage{51}
+  \item {isIntersection}
+    \subitem {Intersection}, \hyperpage{36}
+  \item {isNS}
+    \subitem {Road}, \hyperpage{51}
+  \item {isOpen}
+    \subitem {GUI}, \hyperpage{28}
+  \item {isPaused}
+    \subitem {GUI}, \hyperpage{29}
+  \item {isRoad}
+    \subitem {Intersection}, \hyperpage{36}
+    \subitem {Road}, \hyperpage{51}
+
+  \indexspace
+
+  \item {joinCar}
+    \subitem {Building}, \hyperpage{10}
+    \subitem {Intersection}, \hyperpage{36}
+    \subitem {Road}, \hyperpage{51}
+    \subitem {Square}, \hyperpage{58}
+
+  \indexspace
+
+  \item {leave}
+    \subitem {Resident}, \hyperpage{41}
+
+  \indexspace
+
+  \item {newResident}
+    \subitem {Building}, \hyperpage{10}
+
+  \indexspace
+
+  \item {operator!=}
+    \subitem {Resident}, \hyperpage{42}
+  \item {operator=}
+    \subitem {Car}, \hyperpage{15}
+    \subitem {Square}, \hyperpage{58}
+  \item {operator==}
+    \subitem {Resident}, \hyperpage{42}
+
+  \indexspace
+
+  \item {pedestrians\_}
+    \subitem {Building}, \hyperpage{12}
+  \item {peekDir}
+    \subitem {Car}, \hyperpage{16}
+    \subitem {Resident}, \hyperpage{42}
+  \item {Position}, \hyperpage{38}
+
+  \indexspace
+
+  \item {readCSV}
+    \subitem {GUI}, \hyperpage{29}
+  \item {removeResident}
+    \subitem {Building}, \hyperpage{11}
+  \item {Resident}, \hyperpage{39}
+    \subitem {findPath}, \hyperpage{40}
+    \subitem {getDir}, \hyperpage{40}
+    \subitem {getId}, \hyperpage{41}
+    \subitem {getPos}, \hyperpage{41}
+    \subitem {info}, \hyperpage{41}
+    \subitem {leave}, \hyperpage{41}
+    \subitem {operator!=}, \hyperpage{42}
+    \subitem {operator==}, \hyperpage{42}
+    \subitem {peekDir}, \hyperpage{42}
+    \subitem {Resident}, \hyperpage{40}
+    \subitem {simulate}, \hyperpage{43}
+    \subitem {updateDir}, \hyperpage{43}
+  \item {Residential}, \hyperpage{43}
+    \subitem {buildingType}, \hyperpage{45}
+    \subitem {Residential}, \hyperpage{45}
+  \item {residents\_}
+    \subitem {Building}, \hyperpage{12}
+  \item {Road}, \hyperpage{46}
+    \subitem {addCar}, \hyperpage{48}
+    \subitem {addPed}, \hyperpage{48}
+    \subitem {averageTrafficPercent}, \hyperpage{49}
+    \subitem {getCarCount}, \hyperpage{49}
+    \subitem {getNECarCount}, \hyperpage{49}
+    \subitem {getPedCount}, \hyperpage{49}
+    \subitem {getSpeed}, \hyperpage{50}
+    \subitem {getStats}, \hyperpage{50}
+    \subitem {getSWCarCount}, \hyperpage{50}
+    \subitem {initSquare}, \hyperpage{50}
+    \subitem {isEW}, \hyperpage{51}
+    \subitem {isNS}, \hyperpage{51}
+    \subitem {isRoad}, \hyperpage{51}
+    \subitem {joinCar}, \hyperpage{51}
+    \subitem {Road}, \hyperpage{47}
+    \subitem {simulate}, \hyperpage{52}
+  \item {RoadStats}, \hyperpage{52}
+    \subitem {getAverage}, \hyperpage{53}
+    \subitem {incrementCounter}, \hyperpage{53}
+
+  \indexspace
+
+  \item {setChanged}
+    \subitem {GUI}, \hyperpage{29}
+  \item {simulate}
+    \subitem {Building}, \hyperpage{11}
+    \subitem {Car}, \hyperpage{16}
+    \subitem {Intersection}, \hyperpage{37}
+    \subitem {Resident}, \hyperpage{43}
+    \subitem {Road}, \hyperpage{52}
+    \subitem {Square}, \hyperpage{59}
+  \item {Square}, \hyperpage{53}
+    \subitem {addCar}, \hyperpage{56}
+    \subitem {addPed}, \hyperpage{56}
+    \subitem {getCarCount}, \hyperpage{57}
+    \subitem {getCoordinates}, \hyperpage{57}
+    \subitem {getNeighbour}, \hyperpage{57}
+    \subitem {getPedCount}, \hyperpage{57}
+    \subitem {joinCar}, \hyperpage{58}
+    \subitem {operator=}, \hyperpage{58}
+    \subitem {simulate}, \hyperpage{59}
+    \subitem {Square}, \hyperpage{55}
+
+  \indexspace
+
+  \item {updateDir}
+    \subitem {Car}, \hyperpage{16}
+    \subitem {Resident}, \hyperpage{43}
+
+  \indexspace
+
+  \item {writeCSV}
+    \subitem {GUI}, \hyperpage{30}
+
+\end{theindex}

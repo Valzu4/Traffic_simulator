@@ -1,0 +1,284 @@
+\hypertarget{classIntersection}{}\doxysection{Intersection Class Reference}
+\label{classIntersection}\index{Intersection@{Intersection}}
+
+
+\mbox{\hyperlink{classIntersection}{Intersection}} represents an intersection in the traffic simulation.  
+
+
+
+
+{\ttfamily \#include $<$Intersection.\+hpp$>$}
+
+
+
+Inheritance diagram for Intersection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classIntersection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Intersection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classIntersection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIntersection_a4e6c0689534b2f3a35c4ec1a0b671dd8}{Intersection}} (\mbox{\hyperlink{structPosition}{Position}} pos, \mbox{\hyperlink{classCity}{City}} \&city, std\+::vector$<$ Direction $>$ dirs, int type=0)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classIntersection}{Intersection}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIntersection_a3d2fd23f1e1bd33313ec877834b6a1b4}\label{classIntersection_a3d2fd23f1e1bd33313ec877834b6a1b4}} 
+\mbox{\hyperlink{classIntersection_a3d2fd23f1e1bd33313ec877834b6a1b4}{$\sim$\+Intersection}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classIntersection}{Intersection}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIntersection_a53a20ae4e1e4db0fd045d49376b87c00}\label{classIntersection_a53a20ae4e1e4db0fd045d49376b87c00}} 
+virtual void \mbox{\hyperlink{classIntersection_a53a20ae4e1e4db0fd045d49376b87c00}{init\+Square}} ()
+\begin{DoxyCompactList}\small\item\em init\+Square initializes the intersection \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIntersection_aed8656139357616272cc71dcf1737966}{add\+Car}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&car)
+\begin{DoxyCompactList}\small\item\em add\+Car adds a car to the intersection \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIntersection_a97d02e51401e4257a8128f303b60960c}{join\+Car}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&car)
+\begin{DoxyCompactList}\small\item\em join\+Car adds a car from a building to the road or intersection \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIntersection_ad292123243d9afc2a76ecffc69cb42a6}{add\+Ped}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&\&ped)
+\begin{DoxyCompactList}\small\item\em add\+Ped adds a pedestrian to the intersection \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIntersection_a25cecdf71616ec953a8b2107121097ba}{simulate}} ()
+\begin{DoxyCompactList}\small\item\em simulate simulates the intersection \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classIntersection_a3984e42abbb4464ab9a5268b310694b9}{get\+Car\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+Car\+Count returns the number of cars in the intersection \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classIntersection_a2499892ca2b570f7ac848b171f6f603e}{get\+Ped\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+Ped\+Count returns the ammount of pedestrians in the square \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIntersection_a11f2f62edeca468cf2d131ffe22f185f}{is\+Road}} () const
+\begin{DoxyCompactList}\small\item\em is\+Road returns true for intersections \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIntersection_af63306e25ad06433ba743b0546b68299}{is\+Intersection}} () const
+\begin{DoxyCompactList}\small\item\em is\+Intersection returns true for intersections \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIntersection_a73f709850df7d155720de91fcccfa421}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em get\+Type returns the type of the intersection \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classIntersection_a5f74d1ced0c61230dbd1ed012baaa691}{get\+Stats}} () const
+\begin{DoxyCompactList}\small\item\em get\+Stats returns the statistics of the intersection \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIntersection_ad8777b46cf22ba097a3bc0b7b6bc3604}\label{classIntersection_ad8777b46cf22ba097a3bc0b7b6bc3604}} 
+int {\bfseries max\+Car\+Amount} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classIntersection}{Intersection}} represents an intersection in the traffic simulation. 
+
+\mbox{\hyperlink{classIntersection}{Intersection}} contains output and input spots for cars and pedestrians and simulates them according to the traffic laws. They move the cars and pedestrians where they need to go. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIntersection_a4e6c0689534b2f3a35c4ec1a0b671dd8}\label{classIntersection_a4e6c0689534b2f3a35c4ec1a0b671dd8}} 
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\index{Intersection@{Intersection}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{Intersection()}{Intersection()}}
+{\footnotesize\ttfamily Intersection\+::\+Intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{pos,  }\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{std\+::vector$<$ Direction $>$}]{dirs,  }\item[{int}]{type = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classIntersection}{Intersection}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \mbox{\hyperlink{structPosition}{Position}} of the intersection \\
+\hline
+{\em city} & Reference to the city \\
+\hline
+{\em dirs} & Directions of the roads \\
+\hline
+{\em type} & Type of the intersection \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIntersection_aed8656139357616272cc71dcf1737966}\label{classIntersection_aed8656139357616272cc71dcf1737966}} 
+\index{Intersection@{Intersection}!addCar@{addCar}}
+\index{addCar@{addCar}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{addCar()}{addCar()}}
+{\footnotesize\ttfamily int Intersection\+::add\+Car (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+add\+Car adds a car to the intersection 
+
+The function adds a car to the intersection. The car is added to the input spot of the intersection depending on the direction of the car.
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & the car to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if succesfull, 0 if not 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_ab6d17d8370337914cc62a7a0323d1a56}{Square}}.
+
+\mbox{\Hypertarget{classIntersection_ad292123243d9afc2a76ecffc69cb42a6}\label{classIntersection_ad292123243d9afc2a76ecffc69cb42a6}} 
+\index{Intersection@{Intersection}!addPed@{addPed}}
+\index{addPed@{addPed}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{addPed()}{addPed()}}
+{\footnotesize\ttfamily int Intersection\+::add\+Ped (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&\&}]{ped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+add\+Ped adds a pedestrian to the intersection 
+
+The function adds a pedestrian to the intersection. The pedestrian is added to the input vector of the intersection depending on the direction of the pedestrian.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ped} & the pedestrian to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if succesfull, 0 if not 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a8905eb234a3e05af6d8cab80f4549dcd}{Square}}.
+
+\mbox{\Hypertarget{classIntersection_a3984e42abbb4464ab9a5268b310694b9}\label{classIntersection_a3984e42abbb4464ab9a5268b310694b9}} 
+\index{Intersection@{Intersection}!getCarCount@{getCarCount}}
+\index{getCarCount@{getCarCount}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{getCarCount()}{getCarCount()}}
+{\footnotesize\ttfamily int Intersection\+::get\+Car\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+Car\+Count returns the number of cars in the intersection 
+
+\begin{DoxyReturn}{Returns}
+int number of cars in the intersection 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a4f159a7281a619381e4fc7514aaefdb3}{Square}}.
+
+\mbox{\Hypertarget{classIntersection_a2499892ca2b570f7ac848b171f6f603e}\label{classIntersection_a2499892ca2b570f7ac848b171f6f603e}} 
+\index{Intersection@{Intersection}!getPedCount@{getPedCount}}
+\index{getPedCount@{getPedCount}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{getPedCount()}{getPedCount()}}
+{\footnotesize\ttfamily int Intersection\+::get\+Ped\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+Ped\+Count returns the ammount of pedestrians in the square 
+
+\begin{DoxyReturn}{Returns}
+the ammount of pedestrians in the square. Default implementation returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a8d6f5f450ea0ad9389497ff734d96691}{Square}}.
+
+\mbox{\Hypertarget{classIntersection_a5f74d1ced0c61230dbd1ed012baaa691}\label{classIntersection_a5f74d1ced0c61230dbd1ed012baaa691}} 
+\index{Intersection@{Intersection}!getStats@{getStats}}
+\index{getStats@{getStats}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{getStats()}{getStats()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Intersection\+::get\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Stats returns the statistics of the intersection 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$double$>$ statistics of the intersection. These are the average hourly number of cars passing through the intersection. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIntersection_a73f709850df7d155720de91fcccfa421}\label{classIntersection_a73f709850df7d155720de91fcccfa421}} 
+\index{Intersection@{Intersection}!getType@{getType}}
+\index{getType@{getType}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Intersection\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Type returns the type of the intersection 
+
+\begin{DoxyReturn}{Returns}
+int type of the intersection, 0 = equal, 1 = traffic light 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIntersection_af63306e25ad06433ba743b0546b68299}\label{classIntersection_af63306e25ad06433ba743b0546b68299}} 
+\index{Intersection@{Intersection}!isIntersection@{isIntersection}}
+\index{isIntersection@{isIntersection}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{isIntersection()}{isIntersection()}}
+{\footnotesize\ttfamily bool Intersection\+::is\+Intersection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+is\+Intersection returns true for intersections 
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a237f31dbf8086344467fea6c263382d5}{Square}}.
+
+\mbox{\Hypertarget{classIntersection_a11f2f62edeca468cf2d131ffe22f185f}\label{classIntersection_a11f2f62edeca468cf2d131ffe22f185f}} 
+\index{Intersection@{Intersection}!isRoad@{isRoad}}
+\index{isRoad@{isRoad}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{isRoad()}{isRoad()}}
+{\footnotesize\ttfamily bool Intersection\+::is\+Road (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+is\+Road returns true for intersections 
+
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a43d0285d94048e6ad2ba4c65d25c8239}{Square}}.
+
+\mbox{\Hypertarget{classIntersection_a97d02e51401e4257a8128f303b60960c}\label{classIntersection_a97d02e51401e4257a8128f303b60960c}} 
+\index{Intersection@{Intersection}!joinCar@{joinCar}}
+\index{joinCar@{joinCar}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{joinCar()}{joinCar()}}
+{\footnotesize\ttfamily int Intersection\+::join\+Car (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+join\+Car adds a car from a building to the road or intersection 
+
+The function adds a car to the road. The car is added to the middle of the road, to simulate the car driving out of a building to the middle of the road.
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & the car to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if successfull, 0 if not (default is 0) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a1f3862dccc3dfc17881fa806bbff3308}{Square}}.
+
+\mbox{\Hypertarget{classIntersection_a25cecdf71616ec953a8b2107121097ba}\label{classIntersection_a25cecdf71616ec953a8b2107121097ba}} 
+\index{Intersection@{Intersection}!simulate@{simulate}}
+\index{simulate@{simulate}!Intersection@{Intersection}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Intersection\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+simulate simulates the intersection 
+
+The function simulates the intersection by moving the cars in the intersection according to the traffic laws. The function also takes into account the reaction time of the drivers. 
+
+Reimplemented from \mbox{\hyperlink{classSquare_abce117b86967ef5a0510d664f9125dd0}{Square}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Roads/Intersection.\+hpp\item 
+src/\+Roads/Intersection.\+cpp\end{DoxyCompactItemize}

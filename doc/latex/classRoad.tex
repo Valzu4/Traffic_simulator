@@ -1,0 +1,348 @@
+\hypertarget{classRoad}{}\doxysection{Road Class Reference}
+\label{classRoad}\index{Road@{Road}}
+
+
+\mbox{\hyperlink{classRoad}{Road}} class represents a road in the traffic simulation.  
+
+
+
+
+{\ttfamily \#include $<$Road.\+hpp$>$}
+
+
+
+Inheritance diagram for Road\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{classRoad__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Road\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classRoad__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRoad_a2c1237160eed1e806af1fbcec4ed234e}{Road}} (\mbox{\hyperlink{structPosition}{Position}} pos, \mbox{\hyperlink{classCity}{City}} \&city, int speed=0)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classRoad}{Road}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRoad_a7cd2aa6deb4007a78a4642bad2aac149}\label{classRoad_a7cd2aa6deb4007a78a4642bad2aac149}} 
+\mbox{\hyperlink{classRoad_a7cd2aa6deb4007a78a4642bad2aac149}{$\sim$\+Road}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classRoad}{Road}} object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classRoad_a76b9e79d3f9b971f90967c385e390cb6}{add\+Ped}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&\&ped)
+\begin{DoxyCompactList}\small\item\em add\+Ped adds a pedestrian to the square \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classRoad_ab1d6ebe129c2eb8785ea1683947efa23}{add\+Car}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&car)
+\begin{DoxyCompactList}\small\item\em add\+Car adds a car to the square. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRoad_a8f27eacb05dcf57e26495892976637a3}{join\+Car}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&car)
+\begin{DoxyCompactList}\small\item\em join\+Car adds a car from a building to the road or intersection \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classRoad_a958ac91554f6c6f34ae56ab9b92b651c}{get\+Car\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+Car\+Count returns the number of cars on the road \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classRoad_a03f23feae4df501c440c009e0d300c94}{get\+Ped\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+Ped\+Count returns the ammount of pedestrians in the square \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classRoad_a66de06b1de9f4d17dd9eb36a7739425a}{get\+NECar\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+NECar\+Count returns the number of cars on the road in the directions North and East \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classRoad_adc273c3e5f341580038c188b5787ca07}{get\+SWCar\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+SWCar\+Count returns the number of cars on the road in the directions South and West \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classRoad_a66b4c341290bf28a16a5707ff4afa26b}{simulate}} ()
+\begin{DoxyCompactList}\small\item\em simulate simulates the movement of the cars on the road \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classRoad_a1c98843bf11451fd31268aa09715aeba}{init\+Square}} ()
+\begin{DoxyCompactList}\small\item\em init\+Square initializes the vectors and maps of the road \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRoad_a91b626a410a3baff2c4c1675865f1cc3}{is\+Road}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the \mbox{\hyperlink{classSquare}{Square}} object is a road. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classRoad_ad4664e6db962d1a57ded3c4474647236}{get\+Stats}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the statistics from the object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRoad_af1fa5b5003e0986154746f5cbb180ee2}{is\+NS}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the road has a north-\/south orientation. This is needed for the heatmap. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRoad_a5abb180e8a9ad6fc184570eeb0f2453e}{is\+EW}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the road has an east-\/west orientation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRoad_a516de2a58f1fc5b732b3dcea41040a89}{average\+Traffic\+Percent}} () const
+\begin{DoxyCompactList}\small\item\em Calculates and returns the average traffic percentage on the road from all hours of the entire simulation period. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRoad_a21a60215e922e0b21b6746299ffed309}{get\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Get the Speed object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classRoad}{Road}} class represents a road in the traffic simulation. 
+
+The road class contains the vectors that stores cars and pedestrians that are on the move. Roads move the cars and pedestrians in the simulation 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRoad_a2c1237160eed1e806af1fbcec4ed234e}\label{classRoad_a2c1237160eed1e806af1fbcec4ed234e}} 
+\index{Road@{Road}!Road@{Road}}
+\index{Road@{Road}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{Road()}{Road()}}
+{\footnotesize\ttfamily Road\+::\+Road (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{pos,  }\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{int}]{speed = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classRoad}{Road}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \mbox{\hyperlink{structPosition}{Position}} of thD the city \\
+\hline
+{\em speed} & Speed of the cars on the road \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRoad_ab1d6ebe129c2eb8785ea1683947efa23}\label{classRoad_ab1d6ebe129c2eb8785ea1683947efa23}} 
+\index{Road@{Road}!addCar@{addCar}}
+\index{addCar@{addCar}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{addCar()}{addCar()}}
+{\footnotesize\ttfamily int Road\+::add\+Car (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+add\+Car adds a car to the square. 
+
+Every subclass has its own implementation of the function. Default implementation does nothing and returns 0 for failure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & the car to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if succesfull, 0 if not. (Default 0) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_ab6d17d8370337914cc62a7a0323d1a56}{Square}}.
+
+\mbox{\Hypertarget{classRoad_a76b9e79d3f9b971f90967c385e390cb6}\label{classRoad_a76b9e79d3f9b971f90967c385e390cb6}} 
+\index{Road@{Road}!addPed@{addPed}}
+\index{addPed@{addPed}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{addPed()}{addPed()}}
+{\footnotesize\ttfamily int Road\+::add\+Ped (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&\&}]{ped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+add\+Ped adds a pedestrian to the square 
+
+The function adds a pedestrian to the road. The pedestrian is added to the beginning of the road vector, which is defined by the direction of the pedestrian.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ped} & the pedestrian to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if succesfull, 0 if not 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a8905eb234a3e05af6d8cab80f4549dcd}{Square}}.
+
+\mbox{\Hypertarget{classRoad_a516de2a58f1fc5b732b3dcea41040a89}\label{classRoad_a516de2a58f1fc5b732b3dcea41040a89}} 
+\index{Road@{Road}!averageTrafficPercent@{averageTrafficPercent}}
+\index{averageTrafficPercent@{averageTrafficPercent}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{averageTrafficPercent()}{averageTrafficPercent()}}
+{\footnotesize\ttfamily double Road\+::average\+Traffic\+Percent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calculates and returns the average traffic percentage on the road from all hours of the entire simulation period. 
+
+\begin{DoxyReturn}{Returns}
+The average traffic percentage as a double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoad_a958ac91554f6c6f34ae56ab9b92b651c}\label{classRoad_a958ac91554f6c6f34ae56ab9b92b651c}} 
+\index{Road@{Road}!getCarCount@{getCarCount}}
+\index{getCarCount@{getCarCount}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{getCarCount()}{getCarCount()}}
+{\footnotesize\ttfamily int Road\+::get\+Car\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+Car\+Count returns the number of cars on the road 
+
+\begin{DoxyReturn}{Returns}
+int number of cars on the road 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a4f159a7281a619381e4fc7514aaefdb3}{Square}}.
+
+\mbox{\Hypertarget{classRoad_a66de06b1de9f4d17dd9eb36a7739425a}\label{classRoad_a66de06b1de9f4d17dd9eb36a7739425a}} 
+\index{Road@{Road}!getNECarCount@{getNECarCount}}
+\index{getNECarCount@{getNECarCount}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{getNECarCount()}{getNECarCount()}}
+{\footnotesize\ttfamily int Road\+::get\+NECar\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+NECar\+Count returns the number of cars on the road in the directions North and East 
+
+\begin{DoxyReturn}{Returns}
+int number of cars on the road in the directions North and East 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoad_a03f23feae4df501c440c009e0d300c94}\label{classRoad_a03f23feae4df501c440c009e0d300c94}} 
+\index{Road@{Road}!getPedCount@{getPedCount}}
+\index{getPedCount@{getPedCount}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{getPedCount()}{getPedCount()}}
+{\footnotesize\ttfamily virtual int Road\+::get\+Ped\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+get\+Ped\+Count returns the ammount of pedestrians in the square 
+
+\begin{DoxyReturn}{Returns}
+the ammount of pedestrians in the square. Default implementation returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a8d6f5f450ea0ad9389497ff734d96691}{Square}}.
+
+\mbox{\Hypertarget{classRoad_a21a60215e922e0b21b6746299ffed309}\label{classRoad_a21a60215e922e0b21b6746299ffed309}} 
+\index{Road@{Road}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily int Road\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Speed object. 
+
+\begin{DoxyReturn}{Returns}
+int speed of the cars on the road 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoad_ad4664e6db962d1a57ded3c4474647236}\label{classRoad_ad4664e6db962d1a57ded3c4474647236}} 
+\index{Road@{Road}!getStats@{getStats}}
+\index{getStats@{getStats}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{getStats()}{getStats()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Road\+::get\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the statistics from the object. 
+
+\begin{DoxyReturn}{Returns}
+A vector of double representing the average hourly car counts on the road. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoad_adc273c3e5f341580038c188b5787ca07}\label{classRoad_adc273c3e5f341580038c188b5787ca07}} 
+\index{Road@{Road}!getSWCarCount@{getSWCarCount}}
+\index{getSWCarCount@{getSWCarCount}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{getSWCarCount()}{getSWCarCount()}}
+{\footnotesize\ttfamily int Road\+::get\+SWCar\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+SWCar\+Count returns the number of cars on the road in the directions South and West 
+
+\begin{DoxyReturn}{Returns}
+int number of cars on the road in the directions South and West 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoad_a1c98843bf11451fd31268aa09715aeba}\label{classRoad_a1c98843bf11451fd31268aa09715aeba}} 
+\index{Road@{Road}!initSquare@{initSquare}}
+\index{initSquare@{initSquare}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{initSquare()}{initSquare()}}
+{\footnotesize\ttfamily void Road\+::init\+Square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+init\+Square initializes the vectors and maps of the road 
+
+The function initializes the vectors and maps of the road. The function is called when the simulation is reset. 
+
+Reimplemented from \mbox{\hyperlink{classSquare_a77290cc8478bc0207378b16df2aa4956}{Square}}.
+
+\mbox{\Hypertarget{classRoad_a5abb180e8a9ad6fc184570eeb0f2453e}\label{classRoad_a5abb180e8a9ad6fc184570eeb0f2453e}} 
+\index{Road@{Road}!isEW@{isEW}}
+\index{isEW@{isEW}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{isEW()}{isEW()}}
+{\footnotesize\ttfamily bool Road\+::is\+EW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the road has an east-\/west orientation. 
+
+\begin{DoxyReturn}{Returns}
+True if the road is oriented east-\/west, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoad_af1fa5b5003e0986154746f5cbb180ee2}\label{classRoad_af1fa5b5003e0986154746f5cbb180ee2}} 
+\index{Road@{Road}!isNS@{isNS}}
+\index{isNS@{isNS}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{isNS()}{isNS()}}
+{\footnotesize\ttfamily bool Road\+::is\+NS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the road has a north-\/south orientation. This is needed for the heatmap. 
+
+\begin{DoxyReturn}{Returns}
+True if the road is oriented north-\/south, north-\/east, north-\/west, south-\/west or south-\/east. The heatmap shows all these variations as two up to down lanes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRoad_a91b626a410a3baff2c4c1675865f1cc3}\label{classRoad_a91b626a410a3baff2c4c1675865f1cc3}} 
+\index{Road@{Road}!isRoad@{isRoad}}
+\index{isRoad@{isRoad}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{isRoad()}{isRoad()}}
+{\footnotesize\ttfamily bool Road\+::is\+Road (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the \mbox{\hyperlink{classSquare}{Square}} object is a road. 
+
+\begin{DoxyReturn}{Returns}
+True. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a43d0285d94048e6ad2ba4c65d25c8239}{Square}}.
+
+\mbox{\Hypertarget{classRoad_a8f27eacb05dcf57e26495892976637a3}\label{classRoad_a8f27eacb05dcf57e26495892976637a3}} 
+\index{Road@{Road}!joinCar@{joinCar}}
+\index{joinCar@{joinCar}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{joinCar()}{joinCar()}}
+{\footnotesize\ttfamily int Road\+::join\+Car (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+join\+Car adds a car from a building to the road or intersection 
+
+The function adds a car to the road. The car is added to the middle of the road, to simulate the car driving out of a building to the middle of the road.
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & the car to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if successfull, 0 if not (default is 0) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a1f3862dccc3dfc17881fa806bbff3308}{Square}}.
+
+\mbox{\Hypertarget{classRoad_a66b4c341290bf28a16a5707ff4afa26b}\label{classRoad_a66b4c341290bf28a16a5707ff4afa26b}} 
+\index{Road@{Road}!simulate@{simulate}}
+\index{simulate@{simulate}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Road\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+simulate simulates the movement of the cars on the road 
+
+The function simulates the movement of the cars on the road. The function moves the cars if there is space in front of them, and they have waited for the time that is defined by the speed of the road.
+
+The function also calls the simuate functions for the Residents inside the cars. 
+
+Reimplemented from \mbox{\hyperlink{classSquare_abce117b86967ef5a0510d664f9125dd0}{Square}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Roads/Road.\+hpp\item 
+src/\+Roads/Road.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classSquare.html" title="Square class is a building block of city, and might contain buildings or roads." alt="" coords="5,107,72,133"/>
+<area shape="rect" id="node2" href="$classBuilding.html" title="Building represents an building in the traffic simulation." alt="" coords="132,56,207,83"/>
+<area shape="rect" id="node6" href="$classIntersection.html" title="Intersection represents an intersection in the traffic simulation." alt="" coords="120,107,219,133"/>
+<area shape="rect" id="node7" href="$classRoad.html" title="Road class represents a road in the traffic simulation." alt="" coords="142,157,197,184"/>
+<area shape="rect" id="node3" href="$classCommercial.html" title="Commercial building represents an commercial building in the traffic simulation." alt="" coords="267,5,368,32"/>
+<area shape="rect" id="node4" href="$classIndustrial.html" title="Industrial building represents an industrial building in the traffic simulation." alt="" coords="276,56,359,83"/>
+<area shape="rect" id="node5" href="$classResidential.html" title="Residential building represents an residential building in the traffic simulation." alt="" coords="270,107,365,133"/>
+</map>

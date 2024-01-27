@@ -1,0 +1,361 @@
+\hypertarget{classCity}{}\doxysection{City Class Reference}
+\label{classCity}\index{City@{City}}
+
+
+\mbox{\hyperlink{structCityStats}{City\+Stats}} class is used to store the city as a grid of squares.  
+
+
+
+
+{\ttfamily \#include $<$City.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCity_aca1bfa0d1779df8ab2f9cb1ca965a314}{City}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCity}{City}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_ae95feee8a1d4e1f14ea41ec89b47304f}\label{classCity_ae95feee8a1d4e1f14ea41ec89b47304f}} 
+\mbox{\hyperlink{classCity_ae95feee8a1d4e1f14ea41ec89b47304f}{$\sim$\+City}} ()
+\begin{DoxyCompactList}\small\item\em destroys the city object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_aa5c7041576912d66f4579ebc3bfbf785}{add}} (\mbox{\hyperlink{structPosition}{Position}} pos, \mbox{\hyperlink{classSquare}{Square}} $\ast$square)
+\begin{DoxyCompactList}\small\item\em add adds (or replaces) a square in the city \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSquare}{Square}} $\ast$ \mbox{\hyperlink{classCity_abb13af02a08410f0fe792fcb9976aef6}{get\+Square}} (\mbox{\hyperlink{structPosition}{Position}} pos)
+\begin{DoxyCompactList}\small\item\em get\+Square returns the square in the given position \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classSquare}{Square}} $\ast$ $>$ $>$ \& \mbox{\hyperlink{classCity_aaf816784a96a9b35ec05cde29f84e9b5}{get\+City}} () const
+\begin{DoxyCompactList}\small\item\em get\+City returns the grid of squares \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classCity_a2133eb949814b5f9745ba0a43c995537}{get\+City\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get\+City\+Size returns the size of the city \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCity_a7554b1075b2086af6b64fccbd1fc2789}{get\+Resident\+Count}} () const
+\begin{DoxyCompactList}\small\item\em get\+Resident\+Count returns the amount of residents in the city \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classSquare}{Square}} $\ast$ $>$ \mbox{\hyperlink{classCity_aebd6b08b91bbe72716b608b3b046ee70}{get\+Industrials}} () const
+\begin{DoxyCompactList}\small\item\em get\+Industrials returns the vector of industrial squares \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classSquare}{Square}} $\ast$ $>$ \mbox{\hyperlink{classCity_a53dbe3603b640f22d0edd679fc814eb6}{get\+Commercials}} () const
+\begin{DoxyCompactList}\small\item\em get\+Commercials returns the vector of commercial squares \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classSquare}{Square}} $\ast$ $>$ \mbox{\hyperlink{classCity_ac38c889671c3c81eda4e09914dd77fff}{get\+Residentials}} () const
+\begin{DoxyCompactList}\small\item\em get\+Residentials returns the vector of residential squares \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classRoad}{Road}} $\ast$ $>$ \mbox{\hyperlink{classCity_ae11e56a55f214e9368a5b700b303bdea}{get\+Roads}} () const
+\begin{DoxyCompactList}\small\item\em get\+Roads returns the vector of roads \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_ab1408582ea4d267082181bf85d088441}\label{classCity_ab1408582ea4d267082181bf85d088441}} 
+void \mbox{\hyperlink{classCity_ab1408582ea4d267082181bf85d088441}{simulate}} ()
+\begin{DoxyCompactList}\small\item\em simulates everything in the city \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_aa257106e0f88be9c1947627fce918c9c}\label{classCity_aa257106e0f88be9c1947627fce918c9c}} 
+void \mbox{\hyperlink{classCity_aa257106e0f88be9c1947627fce918c9c}{init}} ()
+\begin{DoxyCompactList}\small\item\em initializes everything in the city for simulation \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCity_ab2731d21c3318abaf7cdc1ac27b99d71}{get\+Time}} () const
+\begin{DoxyCompactList}\small\item\em get\+Time returns the time in the city in 24h format \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCity_a3eb312ac35af17ce6626e79c0ea17490}{current\+Road\+Traffic\+Percentage}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current average road traffic percentage from all roads. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCity_a8d1126e6e64026cfd4d95a209eb2b3bd}{average\+Road\+Traffic\+Percentage}} () const
+\begin{DoxyCompactList}\small\item\em Calculates and returns the average road traffic percentage from all roads from the entire simulation. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $\ast$ $>$ \mbox{\hyperlink{classCity_a518d4ad9df91244a28724afa3813027a}{get\+Intersections}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves a vector of pointers to intersections. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCity_a19ccfa084c5a936bf93cfd122d69d862}{get\+Resident\+Amount}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the amount of residents in the city. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCity_a854872e9cdc1ebfd27eb916028204b61}{cars\+On\+Roads}} () const
+\begin{DoxyCompactList}\small\item\em cars\+On\+Roads returns the amount of cars on the roads \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classCity_a117998d3532f8ba3e9d9be123c3598f4}{get\+Stats}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the hourly averages from the statistics and returns them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_a59e17196d2582ae5f76c5eb2950b4ed1}{clear\+And\+Resize}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Clears the existing data and resizes the container to the specified size, this is needed for importing different size cities. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classCity_a9a7723495e3c3e6b94dc395f61a7aa7c}{get\+Hour\+Counters}} () const
+\begin{DoxyCompactList}\small\item\em Returns the \char`\"{}hour counters\char`\"{}, meaning how many times has a specific hour been simulated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_af8e69fb45f2e8ccd9d673932bc066751}{export\+Stats}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Exports the statistics data to a file with the specified filename. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_afe8672f784893b90052bf3705f458579}\label{classCity_afe8672f784893b90052bf3705f458579}} 
+int \mbox{\hyperlink{classCity_afe8672f784893b90052bf3705f458579}{get\+Ped\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Returns the amount of pedestrians currently traveling on roads. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_adebfc03fa3f8b90f2a3e21581fe57dc8}\label{classCity_adebfc03fa3f8b90f2a3e21581fe57dc8}} 
+int \mbox{\hyperlink{classCity_adebfc03fa3f8b90f2a3e21581fe57dc8}{new\+Resident\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns new ID for new resident. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{structCityStats}{City\+Stats}} class is used to store the city as a grid of squares. 
+
+\mbox{\hyperlink{classCity}{City}} is a grid of squares. \mbox{\hyperlink{classCity}{City}} also tracs many statistics, e.\+g. time, and the ammount of total traffic in the city. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCity_aca1bfa0d1779df8ab2f9cb1ca965a314}\label{classCity_aca1bfa0d1779df8ab2f9cb1ca965a314}} 
+\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\doxysubsubsection{\texorpdfstring{City()}{City()}}
+{\footnotesize\ttfamily City\+::\+City (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCity}{City}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The city is going to be size x size grid \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCity_aa5c7041576912d66f4579ebc3bfbf785}\label{classCity_aa5c7041576912d66f4579ebc3bfbf785}} 
+\index{City@{City}!add@{add}}
+\index{add@{add}!City@{City}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void City\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{pos,  }\item[{\mbox{\hyperlink{classSquare}{Square}} $\ast$}]{square }\end{DoxyParamCaption})}
+
+
+
+add adds (or replaces) a square in the city 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \mbox{\hyperlink{structPosition}{Position}} where to add the square \\
+\hline
+{\em square} & Pointer to the square to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCity_a8d1126e6e64026cfd4d95a209eb2b3bd}\label{classCity_a8d1126e6e64026cfd4d95a209eb2b3bd}} 
+\index{City@{City}!averageRoadTrafficPercentage@{averageRoadTrafficPercentage}}
+\index{averageRoadTrafficPercentage@{averageRoadTrafficPercentage}!City@{City}}
+\doxysubsubsection{\texorpdfstring{averageRoadTrafficPercentage()}{averageRoadTrafficPercentage()}}
+{\footnotesize\ttfamily double City\+::average\+Road\+Traffic\+Percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calculates and returns the average road traffic percentage from all roads from the entire simulation. 
+
+\begin{DoxyReturn}{Returns}
+The average road traffic percentage as a double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a854872e9cdc1ebfd27eb916028204b61}\label{classCity_a854872e9cdc1ebfd27eb916028204b61}} 
+\index{City@{City}!carsOnRoads@{carsOnRoads}}
+\index{carsOnRoads@{carsOnRoads}!City@{City}}
+\doxysubsubsection{\texorpdfstring{carsOnRoads()}{carsOnRoads()}}
+{\footnotesize\ttfamily int City\+::cars\+On\+Roads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+cars\+On\+Roads returns the amount of cars on the roads 
+
+\begin{DoxyReturn}{Returns}
+int amount of cars on the roads 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a59e17196d2582ae5f76c5eb2950b4ed1}\label{classCity_a59e17196d2582ae5f76c5eb2950b4ed1}} 
+\index{City@{City}!clearAndResize@{clearAndResize}}
+\index{clearAndResize@{clearAndResize}!City@{City}}
+\doxysubsubsection{\texorpdfstring{clearAndResize()}{clearAndResize()}}
+{\footnotesize\ttfamily void City\+::clear\+And\+Resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Clears the existing data and resizes the container to the specified size, this is needed for importing different size cities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The new size of the container. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCity_a3eb312ac35af17ce6626e79c0ea17490}\label{classCity_a3eb312ac35af17ce6626e79c0ea17490}} 
+\index{City@{City}!currentRoadTrafficPercentage@{currentRoadTrafficPercentage}}
+\index{currentRoadTrafficPercentage@{currentRoadTrafficPercentage}!City@{City}}
+\doxysubsubsection{\texorpdfstring{currentRoadTrafficPercentage()}{currentRoadTrafficPercentage()}}
+{\footnotesize\ttfamily double City\+::current\+Road\+Traffic\+Percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the current average road traffic percentage from all roads. 
+
+\begin{DoxyReturn}{Returns}
+The current road traffic percentage as a double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_af8e69fb45f2e8ccd9d673932bc066751}\label{classCity_af8e69fb45f2e8ccd9d673932bc066751}} 
+\index{City@{City}!exportStats@{exportStats}}
+\index{exportStats@{exportStats}!City@{City}}
+\doxysubsubsection{\texorpdfstring{exportStats()}{exportStats()}}
+{\footnotesize\ttfamily void City\+::export\+Stats (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Exports the statistics data to a file with the specified filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to which the statistics will be exported. This is \char`\"{}\+Traffic\+Data.\+csv\char`\"{} in the program. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCity_aaf816784a96a9b35ec05cde29f84e9b5}\label{classCity_aaf816784a96a9b35ec05cde29f84e9b5}} 
+\index{City@{City}!getCity@{getCity}}
+\index{getCity@{getCity}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getCity()}{getCity()}}
+{\footnotesize\ttfamily const std\+::vector$<$std\+::vector$<$\mbox{\hyperlink{classSquare}{Square}} $\ast$$>$ $>$\& City\+::get\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+City returns the grid of squares 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::vector$<$\+Square$\ast$$>$$>$ The grid of squares 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a2133eb949814b5f9745ba0a43c995537}\label{classCity_a2133eb949814b5f9745ba0a43c995537}} 
+\index{City@{City}!getCitySize@{getCitySize}}
+\index{getCitySize@{getCitySize}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getCitySize()}{getCitySize()}}
+{\footnotesize\ttfamily size\+\_\+t City\+::get\+City\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+City\+Size returns the size of the city 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t size of the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a53dbe3603b640f22d0edd679fc814eb6}\label{classCity_a53dbe3603b640f22d0edd679fc814eb6}} 
+\index{City@{City}!getCommercials@{getCommercials}}
+\index{getCommercials@{getCommercials}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getCommercials()}{getCommercials()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSquare}{Square}} $\ast$ $>$ City\+::get\+Commercials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Commercials returns the vector of commercial squares 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Square$\ast$$>$ vector of commercial squares 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a9a7723495e3c3e6b94dc395f61a7aa7c}\label{classCity_a9a7723495e3c3e6b94dc395f61a7aa7c}} 
+\index{City@{City}!getHourCounters@{getHourCounters}}
+\index{getHourCounters@{getHourCounters}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getHourCounters()}{getHourCounters()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ City\+::get\+Hour\+Counters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the \char`\"{}hour counters\char`\"{}, meaning how many times has a specific hour been simulated. 
+
+\begin{DoxyReturn}{Returns}
+A vector of int representing the hour counters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_aebd6b08b91bbe72716b608b3b046ee70}\label{classCity_aebd6b08b91bbe72716b608b3b046ee70}} 
+\index{City@{City}!getIndustrials@{getIndustrials}}
+\index{getIndustrials@{getIndustrials}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getIndustrials()}{getIndustrials()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSquare}{Square}} $\ast$ $>$ City\+::get\+Industrials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Industrials returns the vector of industrial squares 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Square$\ast$$>$ vector of industrial squares 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a518d4ad9df91244a28724afa3813027a}\label{classCity_a518d4ad9df91244a28724afa3813027a}} 
+\index{City@{City}!getIntersections@{getIntersections}}
+\index{getIntersections@{getIntersections}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getIntersections()}{getIntersections()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classIntersection}{Intersection}} $\ast$ $>$ City\+::get\+Intersections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a vector of pointers to intersections. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \mbox{\hyperlink{classIntersection}{Intersection}} pointers representing the intersections. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a19ccfa084c5a936bf93cfd122d69d862}\label{classCity_a19ccfa084c5a936bf93cfd122d69d862}} 
+\index{City@{City}!getResidentAmount@{getResidentAmount}}
+\index{getResidentAmount@{getResidentAmount}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getResidentAmount()}{getResidentAmount()}}
+{\footnotesize\ttfamily int City\+::get\+Resident\+Amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the amount of residents in the city. 
+
+\begin{DoxyReturn}{Returns}
+The number of residents as an integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a7554b1075b2086af6b64fccbd1fc2789}\label{classCity_a7554b1075b2086af6b64fccbd1fc2789}} 
+\index{City@{City}!getResidentCount@{getResidentCount}}
+\index{getResidentCount@{getResidentCount}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getResidentCount()}{getResidentCount()}}
+{\footnotesize\ttfamily int City\+::get\+Resident\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Resident\+Count returns the amount of residents in the city 
+
+\begin{DoxyReturn}{Returns}
+int amount of residents in the city 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_ac38c889671c3c81eda4e09914dd77fff}\label{classCity_ac38c889671c3c81eda4e09914dd77fff}} 
+\index{City@{City}!getResidentials@{getResidentials}}
+\index{getResidentials@{getResidentials}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getResidentials()}{getResidentials()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classSquare}{Square}} $\ast$ $>$ City\+::get\+Residentials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Residentials returns the vector of residential squares 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Square$\ast$$>$ vector of residential squares 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_ae11e56a55f214e9368a5b700b303bdea}\label{classCity_ae11e56a55f214e9368a5b700b303bdea}} 
+\index{City@{City}!getRoads@{getRoads}}
+\index{getRoads@{getRoads}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getRoads()}{getRoads()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classRoad}{Road}} $\ast$ $>$ City\+::get\+Roads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Roads returns the vector of roads 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Road$\ast$$>$ vector of roads 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_abb13af02a08410f0fe792fcb9976aef6}\label{classCity_abb13af02a08410f0fe792fcb9976aef6}} 
+\index{City@{City}!getSquare@{getSquare}}
+\index{getSquare@{getSquare}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getSquare()}{getSquare()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSquare}{Square}} $\ast$ City\+::get\+Square (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+get\+Square returns the square in the given position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \mbox{\hyperlink{structPosition}{Position}} of the square \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Square$\ast$ Pointer to the square 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_a117998d3532f8ba3e9d9be123c3598f4}\label{classCity_a117998d3532f8ba3e9d9be123c3598f4}} 
+\index{City@{City}!getStats@{getStats}}
+\index{getStats@{getStats}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getStats()}{getStats()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ City\+::get\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves the hourly averages from the statistics and returns them. 
+
+\begin{DoxyReturn}{Returns}
+A vector of doubles representing the hourly averages. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCity_ab2731d21c3318abaf7cdc1ac27b99d71}\label{classCity_ab2731d21c3318abaf7cdc1ac27b99d71}} 
+\index{City@{City}!getTime@{getTime}}
+\index{getTime@{getTime}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily double City\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Time returns the time in the city in 24h format 
+
+\begin{DoxyReturn}{Returns}
+double time in the city 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/City.\+hpp\item 
+src/City.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\hypertarget{structRoadStats}{}\doxysection{Road\+Stats Struct Reference}
+\label{structRoadStats}\index{RoadStats@{RoadStats}}
+
+
+Struct representing stats for roads.  
+
+
+
+
+{\ttfamily \#include $<$Utilities.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structRoadStats_a67895b4aa842a8d796c0a4e70608999b}{increment\+Counter}} (int index)
+\begin{DoxyCompactList}\small\item\em Increments the counter for a specific hour and updates the overall counter. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structRoadStats_a53664c4f5777093440659fa948e1c93f}{get\+Average}} () const
+\begin{DoxyCompactList}\small\item\em Calculates and retrieves the average hour for cars. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structRoadStats_a15148ca6b42319828b076a294b2faec0}\label{structRoadStats_a15148ca6b42319828b076a294b2faec0}} 
+std\+::vector$<$ int $>$ {\bfseries car\+Counters}
+\item 
+\mbox{\Hypertarget{structRoadStats_a947beda59304cf64514c57cfeb44f274}\label{structRoadStats_a947beda59304cf64514c57cfeb44f274}} 
+int {\bfseries overall\+Counter}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct representing stats for roads. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structRoadStats_a53664c4f5777093440659fa948e1c93f}\label{structRoadStats_a53664c4f5777093440659fa948e1c93f}} 
+\index{RoadStats@{RoadStats}!getAverage@{getAverage}}
+\index{getAverage@{getAverage}!RoadStats@{RoadStats}}
+\doxysubsubsection{\texorpdfstring{getAverage()}{getAverage()}}
+{\footnotesize\ttfamily double Road\+Stats\+::get\+Average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates and retrieves the average hour for cars. 
+
+\begin{DoxyReturn}{Returns}
+The average hour for cars as a double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structRoadStats_a67895b4aa842a8d796c0a4e70608999b}\label{structRoadStats_a67895b4aa842a8d796c0a4e70608999b}} 
+\index{RoadStats@{RoadStats}!incrementCounter@{incrementCounter}}
+\index{incrementCounter@{incrementCounter}!RoadStats@{RoadStats}}
+\doxysubsubsection{\texorpdfstring{incrementCounter()}{incrementCounter()}}
+{\footnotesize\ttfamily void Road\+Stats\+::increment\+Counter (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increments the counter for a specific hour and updates the overall counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Hour index. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Utilities.\+hpp\end{DoxyCompactItemize}

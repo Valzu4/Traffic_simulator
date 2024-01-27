@@ -1,0 +1,6 @@
+<map id="Gym" name="Gym">
+<area shape="rect" id="node1" title=" " alt="" coords="29,229,83,256"/>
+<area shape="rect" id="node2" href="$classCommercial.html" title=" " alt="" coords="5,155,107,181"/>
+<area shape="rect" id="node3" href="$classBuilding.html" title=" " alt="" coords="19,80,93,107"/>
+<area shape="rect" id="node4" href="$classSquare.html" title=" " alt="" coords="23,5,89,32"/>
+</map>

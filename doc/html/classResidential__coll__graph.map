@@ -1,0 +1,7 @@
+<map id="Residential" name="Residential">
+<area shape="rect" id="node1" title="Residential building represents an residential building in the traffic simulation." alt="" coords="25,247,119,273"/>
+<area shape="rect" id="node2" href="$classBuilding.html" title="Building represents an building in the traffic simulation." alt="" coords="35,171,109,197"/>
+<area shape="rect" id="node3" href="$classSquare.html" title="Square class is a building block of city, and might contain buildings or roads." alt="" coords="39,95,105,121"/>
+<area shape="rect" id="node4" href="$classCity.html" title="CityStats class is used to store the city as a grid of squares." alt="" coords="5,5,53,32"/>
+<area shape="rect" id="node5" href="$structPosition.html" title="Struct representing a position with x and y coordinates." alt="" coords="77,5,152,32"/>
+</map>

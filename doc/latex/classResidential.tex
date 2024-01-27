@@ -1,0 +1,95 @@
+\hypertarget{classResidential}{}\doxysection{Residential Class Reference}
+\label{classResidential}\index{Residential@{Residential}}
+
+
+\mbox{\hyperlink{classResidential}{Residential}} building represents an residential building in the traffic simulation.  
+
+
+
+
+{\ttfamily \#include $<$Residential.\+hpp$>$}
+
+
+
+Inheritance diagram for Residential\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classResidential__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Residential\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classResidential__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResidential_a8114824d0a8d6c0f11534469e6da5e57}{Residential}} (\mbox{\hyperlink{structPosition}{Position}} pos, \mbox{\hyperlink{classCity}{City}} \&city, int capacity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classResidential}{Residential}} building object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classResidential_aa78eef79f3c8818d4e20625d7220c038}\label{classResidential_aa78eef79f3c8818d4e20625d7220c038}} 
+void \mbox{\hyperlink{classResidential_aa78eef79f3c8818d4e20625d7220c038}{init\+Square}} ()
+\begin{DoxyCompactList}\small\item\em Adds residents to the building. \end{DoxyCompactList}\item 
+Building\+Type \mbox{\hyperlink{classResidential_af23a6c26f5ad0cbb79eac74114462f29}{building\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Checks the type of building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classResidential}{Residential}} building represents an residential building in the traffic simulation. 
+
+\mbox{\hyperlink{classResidential}{Residential}} building is one type of building where the residents are implemented. The capacity is set to 100 by the program but user can also change it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResidential_a8114824d0a8d6c0f11534469e6da5e57}\label{classResidential_a8114824d0a8d6c0f11534469e6da5e57}} 
+\index{Residential@{Residential}!Residential@{Residential}}
+\index{Residential@{Residential}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{Residential()}{Residential()}}
+{\footnotesize\ttfamily Residential\+::\+Residential (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{pos,  }\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classResidential}{Residential}} building object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \mbox{\hyperlink{structPosition}{Position}} of the building \\
+\hline
+{\em city} & Reference to the city \\
+\hline
+{\em capacity} & The maximum number of people in the building \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResidential_af23a6c26f5ad0cbb79eac74114462f29}\label{classResidential_af23a6c26f5ad0cbb79eac74114462f29}} 
+\index{Residential@{Residential}!buildingType@{buildingType}}
+\index{buildingType@{buildingType}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{buildingType()}{buildingType()}}
+{\footnotesize\ttfamily Building\+Type Residential\+::building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks the type of building. 
+
+\begin{DoxyReturn}{Returns}
+Building\+Type \mbox{\hyperlink{classResidential}{Residential}} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuilding_af9c875717aa3ee04c1f9f28125e57483}{Building}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Buildings/Residential.\+hpp\item 
+src/\+Buildings/Residential.\+cpp\end{DoxyCompactItemize}

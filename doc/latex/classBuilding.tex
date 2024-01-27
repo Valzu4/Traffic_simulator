@@ -1,0 +1,370 @@
+\hypertarget{classBuilding}{}\doxysection{Building Class Reference}
+\label{classBuilding}\index{Building@{Building}}
+
+
+\mbox{\hyperlink{classBuilding}{Building}} represents an building in the traffic simulation.  
+
+
+
+
+{\ttfamily \#include $<$Building.\+hpp$>$}
+
+
+
+Inheritance diagram for Building\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classBuilding__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Building\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classBuilding__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuilding_a3584267e51ea1f719ce4222f9a0b5c74}{Building}} (\mbox{\hyperlink{structPosition}{Position}} pos, \mbox{\hyperlink{classCity}{City}} \&city, int capacity)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBuilding}{Building}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_a9ff8603d074ec3e9ae46301226fed96a}\label{classBuilding_a9ff8603d074ec3e9ae46301226fed96a}} 
+\mbox{\hyperlink{classBuilding_a9ff8603d074ec3e9ae46301226fed96a}{$\sim$\+Building}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classBuilding}{Building}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_acd3940677e7e38ac077991acbb8bad40}\label{classBuilding_acd3940677e7e38ac077991acbb8bad40}} 
+virtual void \mbox{\hyperlink{classBuilding_acd3940677e7e38ac077991acbb8bad40}{init\+Square}} ()
+\begin{DoxyCompactList}\small\item\em Removes all residents and cars. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBuilding_a878c9287823aa1443b6749bf3fbc12a3}{new\+Resident}} (\mbox{\hyperlink{classCity}{City}} \&city, \mbox{\hyperlink{structPosition}{Position}} current\+Pos, int id)
+\begin{DoxyCompactList}\small\item\em Create a new resident and add it to the building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBuilding_a5b607f01dd07b7611b9e554695352ad0}{add\+Resident}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&resident)
+\begin{DoxyCompactList}\small\item\em Adds resident to the building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBuilding_a02705f1fe7a1327d63e7c10b519d188c}{remove\+Resident}} (int resident\+Id, const \mbox{\hyperlink{structPosition}{Position}} end\+Pos, int car\+Id)
+\begin{DoxyCompactList}\small\item\em Creates a car and moves the resident from building to the car. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuilding_a1220f7832c36167eface93516c1c329e}{add\+Car}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&car)
+\begin{DoxyCompactList}\small\item\em Removes the car. This function is called when resident is moved from car to building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuilding_abe1fc1e7e410ce26d9ba0eb9fa92d7f9}{add\+Ped}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&\&ped)
+\begin{DoxyCompactList}\small\item\em Adds a pedestrian to the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuilding_aa3926ea68b133d326423919d082d183b}{simulate}} ()
+\begin{DoxyCompactList}\small\item\em simulate moves a car inside the building to the road \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuilding_a485dd9f5851401b80f0b9b7f9acc15e5}{get\+Car\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get how many cars are in the building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBuilding_a4cba9476f01375994ac9200b02fac80c}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Get the capacity of the building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBuilding_a0dd32dd54cd314a6994ec82ac93cda1e}{get\+Residents}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of residents in the building. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuilding_aff86a2d91cdf59d1504723f830d18940}{is\+Building}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the square is building or not. \end{DoxyCompactList}\item 
+virtual Building\+Type \mbox{\hyperlink{classBuilding_af9c875717aa3ee04c1f9f28125e57483}{building\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Checks the type of building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBuilding_aea3379135d834c2cadfc4892a93d86ab}{join\+Car}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&car, Direction dir)
+\begin{DoxyCompactList}\small\item\em Calls the add\+Car function to remove the car. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ $>$ \mbox{\hyperlink{classBuilding_a97cd860e273c6e0dccb1318b8bc6948c}{residents\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Vector containing the \mbox{\hyperlink{classResident}{Resident}} pointers. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ $>$ \mbox{\hyperlink{classBuilding_a88aa87215277b20b769c87125e50aa8e}{cars\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Vector containing the \mbox{\hyperlink{classCar}{Car}} pointers. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ $>$ \mbox{\hyperlink{classBuilding_a6ade4eb075b3d3f8e22a9ab8b8583457}{pedestrians\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Vector containing the \mbox{\hyperlink{classResident}{Resident}} pointers that are going to walk. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_a1eeafe8c9b9988a54124f5c84acedfae}\label{classBuilding_a1eeafe8c9b9988a54124f5c84acedfae}} 
+int \mbox{\hyperlink{classBuilding_a1eeafe8c9b9988a54124f5c84acedfae}{capacity\+\_\+}}
+\begin{DoxyCompactList}\small\item\em capacity is the number of residents the building can take The user can affect only on the number of residential building capacity. It is set to 500 but can be changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classBuilding}{Building}} represents an building in the traffic simulation. 
+
+\mbox{\hyperlink{classBuilding}{Building}} contains a vector for residents. When the resident is about to leave, it is moved to either pedestrians vector, or if going by car, it is moved to a car and cars have their own vector. There are also different type of buildings and different type of buildings have different capacities for residents. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBuilding_a3584267e51ea1f719ce4222f9a0b5c74}\label{classBuilding_a3584267e51ea1f719ce4222f9a0b5c74}} 
+\index{Building@{Building}!Building@{Building}}
+\index{Building@{Building}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{Building()}{Building()}}
+{\footnotesize\ttfamily Building\+::\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{pos,  }\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{int}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classBuilding}{Building}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \mbox{\hyperlink{structPosition}{Position}} of the building \\
+\hline
+{\em city} & Reference to the city \\
+\hline
+{\em capacity} & The maximum number of people in the building \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBuilding_a1220f7832c36167eface93516c1c329e}\label{classBuilding_a1220f7832c36167eface93516c1c329e}} 
+\index{Building@{Building}!addCar@{addCar}}
+\index{addCar@{addCar}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{addCar()}{addCar()}}
+{\footnotesize\ttfamily int Building\+::add\+Car (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes the car. This function is called when resident is moved from car to building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & \mbox{\hyperlink{classCar}{Car}} object which is going to be removed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_ab6d17d8370337914cc62a7a0323d1a56}{Square}}.
+
+\mbox{\Hypertarget{classBuilding_abe1fc1e7e410ce26d9ba0eb9fa92d7f9}\label{classBuilding_abe1fc1e7e410ce26d9ba0eb9fa92d7f9}} 
+\index{Building@{Building}!addPed@{addPed}}
+\index{addPed@{addPed}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{addPed()}{addPed()}}
+{\footnotesize\ttfamily int Building\+::add\+Ped (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&\&}]{ped }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a pedestrian to the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ped} & \mbox{\hyperlink{classResident}{Resident}} to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if successful, 0 if not 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a8905eb234a3e05af6d8cab80f4549dcd}{Square}}.
+
+\mbox{\Hypertarget{classBuilding_a5b607f01dd07b7611b9e554695352ad0}\label{classBuilding_a5b607f01dd07b7611b9e554695352ad0}} 
+\index{Building@{Building}!addResident@{addResident}}
+\index{addResident@{addResident}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{addResident()}{addResident()}}
+{\footnotesize\ttfamily int Building\+::add\+Resident (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classResident}{Resident}} $>$ \&}]{resident }\end{DoxyParamCaption})}
+
+
+
+Adds resident to the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resident} & \mbox{\hyperlink{classResident}{Resident}} to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if successful, 0 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_af9c875717aa3ee04c1f9f28125e57483}\label{classBuilding_af9c875717aa3ee04c1f9f28125e57483}} 
+\index{Building@{Building}!buildingType@{buildingType}}
+\index{buildingType@{buildingType}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{buildingType()}{buildingType()}}
+{\footnotesize\ttfamily virtual Building\+Type Building\+::building\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks the type of building. 
+
+\begin{DoxyReturn}{Returns}
+Building\+Type None 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_aa07ac472d290d29ac7e4832872a090f2}{Square}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classResidential_af23a6c26f5ad0cbb79eac74114462f29}{Residential}}, \mbox{\hyperlink{classIndustrial_a8e09f2ba32cb707f235d4246b5ec85e8}{Industrial}}, and \mbox{\hyperlink{classCommercial_a8413ca9b99b68c0c78b769da7837024c}{Commercial}}.
+
+\mbox{\Hypertarget{classBuilding_a4cba9476f01375994ac9200b02fac80c}\label{classBuilding_a4cba9476f01375994ac9200b02fac80c}} 
+\index{Building@{Building}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Building\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the capacity of the building. 
+
+\begin{DoxyReturn}{Returns}
+int returns the capacity number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_a485dd9f5851401b80f0b9b7f9acc15e5}\label{classBuilding_a485dd9f5851401b80f0b9b7f9acc15e5}} 
+\index{Building@{Building}!getCarCount@{getCarCount}}
+\index{getCarCount@{getCarCount}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getCarCount()}{getCarCount()}}
+{\footnotesize\ttfamily int Building\+::get\+Car\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get how many cars are in the building. 
+
+\begin{DoxyReturn}{Returns}
+int number of cars 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a4f159a7281a619381e4fc7514aaefdb3}{Square}}.
+
+\mbox{\Hypertarget{classBuilding_a0dd32dd54cd314a6994ec82ac93cda1e}\label{classBuilding_a0dd32dd54cd314a6994ec82ac93cda1e}} 
+\index{Building@{Building}!getResidents@{getResidents}}
+\index{getResidents@{getResidents}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getResidents()}{getResidents()}}
+{\footnotesize\ttfamily int Building\+::get\+Residents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of residents in the building. 
+
+\begin{DoxyReturn}{Returns}
+int number of residents 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_aff86a2d91cdf59d1504723f830d18940}\label{classBuilding_aff86a2d91cdf59d1504723f830d18940}} 
+\index{Building@{Building}!isBuilding@{isBuilding}}
+\index{isBuilding@{isBuilding}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{isBuilding()}{isBuilding()}}
+{\footnotesize\ttfamily bool Building\+::is\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the square is building or not. 
+
+\begin{DoxyReturn}{Returns}
+bool true 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSquare_a004f372222ffb6d0fc23ff100a9d8961}{Square}}.
+
+\mbox{\Hypertarget{classBuilding_aea3379135d834c2cadfc4892a93d86ab}\label{classBuilding_aea3379135d834c2cadfc4892a93d86ab}} 
+\index{Building@{Building}!joinCar@{joinCar}}
+\index{joinCar@{joinCar}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{joinCar()}{joinCar()}}
+{\footnotesize\ttfamily int Building\+::join\+Car (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classCar}{Car}} $>$ \&\&}]{car,  }\item[{Direction}]{dir }\end{DoxyParamCaption})}
+
+
+
+Calls the add\+Car function to remove the car. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em car} & The car to remove \\
+\hline
+{\em dir} & the direction of the car\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_a878c9287823aa1443b6749bf3fbc12a3}\label{classBuilding_a878c9287823aa1443b6749bf3fbc12a3}} 
+\index{Building@{Building}!newResident@{newResident}}
+\index{newResident@{newResident}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{newResident()}{newResident()}}
+{\footnotesize\ttfamily int Building\+::new\+Resident (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} \&}]{city,  }\item[{\mbox{\hyperlink{structPosition}{Position}}}]{current\+Pos,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Create a new resident and add it to the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Reference to the city \\
+\hline
+{\em current\+Pos} & \mbox{\hyperlink{structPosition}{Position}} where the resident is created \\
+\hline
+{\em id} & Id for the new resident\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if successful, 0 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_a02705f1fe7a1327d63e7c10b519d188c}\label{classBuilding_a02705f1fe7a1327d63e7c10b519d188c}} 
+\index{Building@{Building}!removeResident@{removeResident}}
+\index{removeResident@{removeResident}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{removeResident()}{removeResident()}}
+{\footnotesize\ttfamily int Building\+::remove\+Resident (\begin{DoxyParamCaption}\item[{int}]{resident\+Id,  }\item[{const \mbox{\hyperlink{structPosition}{Position}}}]{end\+Pos,  }\item[{int}]{car\+Id }\end{DoxyParamCaption})}
+
+
+
+Creates a car and moves the resident from building to the car. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resident\+Id} & Id of the resident \\
+\hline
+{\em end\+Pos} & The position where the car is supposed to go \\
+\hline
+{\em car\+Id} & Id for the new car\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if successful, 0 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_aa3926ea68b133d326423919d082d183b}\label{classBuilding_aa3926ea68b133d326423919d082d183b}} 
+\index{Building@{Building}!simulate@{simulate}}
+\index{simulate@{simulate}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Building\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+simulate moves a car inside the building to the road 
+
+If there are cars inside the building this function moves one car to the road. If there doesn\textquotesingle{}t exists a road the car can\textquotesingle{}t move. If the first car can\textquotesingle{}t join to the road the the function tries the next one.
+
+If there are residents in the building who are about to walk to a new destination, they are moved from pedestrians vector the road 
+
+Reimplemented from \mbox{\hyperlink{classSquare_abce117b86967ef5a0510d664f9125dd0}{Square}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBuilding_a88aa87215277b20b769c87125e50aa8e}\label{classBuilding_a88aa87215277b20b769c87125e50aa8e}} 
+\index{Building@{Building}!cars\_@{cars\_}}
+\index{cars\_@{cars\_}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{cars\_}{cars\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classCar}{Car}}$>$ $>$ Building\+::cars\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Vector containing the \mbox{\hyperlink{classCar}{Car}} pointers. 
+
+\mbox{\hyperlink{classCar}{Car}} is added to cars\+\_\+ vector when the car is created for a resident and removed when the car leaves the building. \mbox{\hyperlink{classCar}{Car}} never enters a building but is removed when the resident gets to its destination. \mbox{\Hypertarget{classBuilding_a6ade4eb075b3d3f8e22a9ab8b8583457}\label{classBuilding_a6ade4eb075b3d3f8e22a9ab8b8583457}} 
+\index{Building@{Building}!pedestrians\_@{pedestrians\_}}
+\index{pedestrians\_@{pedestrians\_}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{pedestrians\_}{pedestrians\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classResident}{Resident}}$>$ $>$ Building\+::pedestrians\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Vector containing the \mbox{\hyperlink{classResident}{Resident}} pointers that are going to walk. 
+
+When the resident is going to leave the building by walking, it is added to pedestrians\+\_\+ vector. Pedestrian is moved to a road from the simulate function \mbox{\Hypertarget{classBuilding_a97cd860e273c6e0dccb1318b8bc6948c}\label{classBuilding_a97cd860e273c6e0dccb1318b8bc6948c}} 
+\index{Building@{Building}!residents\_@{residents\_}}
+\index{residents\_@{residents\_}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{residents\_}{residents\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classResident}{Resident}}$>$ $>$ Building\+::residents\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Vector containing the \mbox{\hyperlink{classResident}{Resident}} pointers. 
+
+When a resident enters the building, it is moved to residents vector. When the resident leaves the building, it is removed from the vector 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Buildings/Building.\+hpp\item 
+src/\+Buildings/Building.\+cpp\end{DoxyCompactItemize}
